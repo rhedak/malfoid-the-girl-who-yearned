@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Malfoid: The Girl who Yearned, a free fan webcomic retelling Philosopher's Stone with a split POV between Harry and Draconia Malfoy.">
+<title>Malfoid: The Girl who Yearned</title>
+<style>
+  :root { --bg: #111015; --fg: #efe9dc; --muted: #9b948a; --accent: #c9a24a; --card: #1b1921; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  body { padding-block: 24px 56px; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+  img { max-width: 100%; height: auto; display: block; }
+  header { max-width: 720px; margin: 0 auto 32px; text-align: center; }
+  header img { margin: 0 auto 20px; width: min(340px, 80vw); border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,.5); }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 700; font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0 0 8px; color: var(--accent); text-wrap: balance; }
+  .tagline { color: var(--muted); margin: 0; }
+  main { max-width: 720px; margin: 0 auto; }
+  .chapters { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .chapters a { display: block; padding: 16px 18px; background: var(--card); border-radius: 8px; color: var(--fg); text-decoration: none; border: 1px solid #2a2733; }
+  .chapters a:hover, .chapters a:focus-visible { border-color: var(--accent); }
+  .chapters strong { display: block; color: var(--accent); }
+  .chapters span { color: var(--muted); font-size: .95rem; }
+  .empty { color: var(--muted); padding: 24px 0; text-align: center; }
+  footer { max-width: 720px; margin: 48px auto 0; color: var(--muted); font-size: .9rem; text-align: center; }
+</style>
+</head>
+<body>
+<header>
+  <img src="cover.jpg" alt="Cover: Malfoid, The Girl who Yearned. Draconia Malfoy and Harry Potter stand back to back, each holding a wand.">
+  <h1>Malfoid: The Girl who Yearned</h1>
+  <p class="tagline">A retelling of Philosopher's Stone with a split point of view: Harry, and Draconia Malfoy.</p>
+</header>
+<main>
+  <ul class="chapters" id="chapters">
+    <li class="empty">Chapters will appear here as they are published.</li>
+  </ul>
+</main>
+<footer>
+  A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.
+</footer>
+<script>
+  // Lists the chapters in chapters/index.json. Each entry: { "id": "ch00", "title": "...", "summary": "..." }.
+  fetch("chapters/index.json")
+    .then(r => r.ok ? r.json() : [])
+    .then(list => {
+      const ul = document.getElementById("chapters");
+      if (!list.length) return;
+      ul.innerHTML = "";
+      list.forEach(ch => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = "chapters/" + encodeURIComponent(ch.id) + "/";
+        const strong = document.createElement("strong");
+        strong.textContent = ch.title;
+        const span = document.createElement("span");
+        span.textContent = ch.summary || "";
+        a.append(strong, span);
+        li.append(a);
+        ul.append(li);
+      });
+    })
+    .catch(() => {});
+</script>
+</body>
+</html>
