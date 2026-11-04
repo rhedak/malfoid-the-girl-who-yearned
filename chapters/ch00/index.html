@@ -1,0 +1,259 @@
+<!doctype html>
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>The Boy and the Girl</title>
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+</style>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 0</p>
+  <h1>The Boy and the Girl</h1>
+  <p class="meta">Test reader · pages 1–7 · panels 01–50 · complete first draft of the prologue; pages 4–7 were picked and lettered without review</p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">A country lane, 31 October 1981</span><span class="r">01–09</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">Malfoy Manor, the same night</span><span class="r">10–18</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">The family conference, continued</span><span class="r">19–25</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">The aftermath, and the mask</span><span class="r">26–32</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">Privet Drive, 1 November 1981</span><span class="r">33–37</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">The night on Privet Drive</span><span class="r">38–48</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">Two children</span><span class="r">49–50</span></a></li>
+    </ol>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · 31 October 1981, a country lane</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="Lucius in the lane at night, with the caption 31 October 1981."></figure>
+  <figure><img src="img/02.jpg" alt="Close-up of Lucius's forearm with the Dark Mark, rain on the skin."></figure>
+  <figure><img src="img/03.jpg" alt="Lucius looks down toward his arm; a thought bubble says it's fading."></figure>
+  <figure><img src="img/04.jpg" alt="Pettigrew stumbles out of the hedge toward Lucius."></figure>
+  <figure><img src="img/05.jpg" alt="Pettigrew clutches Lucius's cloak and begs for protection."></figure>
+  <figure><img src="img/06.jpg" alt="Close-up of Lucius's eyes as he works out what this means."></figure>
+  <figure><img src="img/07.jpg" alt="Lucius peels Pettigrew's fingers off his cloak."></figure>
+  <figure><img src="img/08.jpg" alt="Lucius turns his back and prepares to Disapparate."></figure>
+  <figure><img src="img/09.jpg" alt="Pettigrew alone in the empty lane."></figure>
+
+  <p class="page-label" id="page-2"><span>Page 2 · Malfoy Manor, the same night</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/10.jpg" alt="Malfoy Manor at night under a stormy sky, two white peacocks on the lawn, with the caption Malfoy Manor, Wiltshire. The same night."></figure>
+  <figure><img src="img/11.jpg" alt="Narcissa stands by the fire holding toddler Draconia, while Bellatrix lounges in the armchair, watching."></figure>
+  <figure><img src="img/12.jpg" alt="Lucius walks in through the open double doors. Narcissa, seen from behind, turns to him with Draconia and says his owl said it was urgent. Bellatrix sits in the armchair."></figure>
+  <figure><img src="img/13.jpg" alt="Bellatrix lounges in the armchair by the fire and says: Well? Some of us were busy."></figure>
+  <figure><img src="img/14.jpg" alt="Lucius, unnerved, holds out his left arm to show the faded Dark Mark and says: Look at it."></figure>
+  <figure><img src="img/15.jpg" alt="Narcissa gasps and draws Draconia closer, while Bellatrix in the armchair glares with fear and fury."></figure>
+  <figure><img src="img/16.jpg" alt="Lucius, pale and frightened, tells them: He's gone. Not hiding. Gone. Pettigrew told me himself."></figure>
+  <figure><img src="img/17.jpg" alt="Lucius, seen from behind, addresses Bellatrix, Narcissa and Draconia: We must act fast and clear our name."></figure>
+  <figure><img src="img/18.jpg" alt="Low angle on Bellatrix, smirking, wand in hand and her shadow on the wall, as she rebukes Lucius."></figure>
+
+  <p class="page-label" id="page-3"><span>Page 3 · The family conference, continued</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/19.jpg" alt="Narcissa stands between Bellatrix on the left and Lucius on the right, holding Draconia and looking torn, with the thought: My sister. My husband."></figure>
+  <figure><img src="img/20.jpg" alt="Close-up of little Draconia nestled against her mother's shoulder, one small fist holding a strand of Narcissa's hair."></figure>
+  <figure><img src="img/21.jpg" alt="Narcissa turns firmly toward her sister, shielding Draconia, and asks what will become of the Malfoy family if they are thrown into prison, and what will become of her."></figure>
+  <figure><img src="img/22.jpg" alt="Lucius lays a hand on Narcissa's shoulder and says that when the Ministry comes they will hear the truth: he was under the Imperius Curse."></figure>
+  <figure><img src="img/23.jpg" alt="Narcissa, doubtful, looks at Lucius with Draconia in front of her and says they will never believe it."></figure>
+  <figure><img src="img/24.jpg" alt="Lucius gives a thin, cold smile and says they will, if the family is generous enough: everyone in the Ministry has something they would like forgotten."></figure>
+  <figure><img src="img/25.jpg" alt="Bellatrix, laughing, stands in front of the open double doors and thrusts her wand toward the viewer, saying: Coward."></figure>
+
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · The aftermath, and the mask</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/26.jpg" alt="Panel 26"></figure>
+  <figure><img src="img/27.jpg" alt="Panel 27"></figure>
+  <figure><img src="img/28.jpg" alt="Panel 28"></figure>
+  <figure><img src="img/29.jpg" alt="Panel 29"></figure>
+  <figure><img src="img/30.jpg" alt="Panel 30"></figure>
+  <figure><img src="img/31.jpg" alt="Panel 31"></figure>
+  <figure><img src="img/32.jpg" alt="Panel 32"></figure>
+
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · Privet Drive, 1 November 1981</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/33.jpg" alt="Panel 33"></figure>
+  <figure><img src="img/34.jpg" alt="Panel 34"></figure>
+  <figure><img src="img/35.jpg" alt="Panel 35"></figure>
+  <figure><img src="img/36.jpg" alt="Panel 36"></figure>
+  <figure><img src="img/37.jpg" alt="Panel 37"></figure>
+
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · The night on Privet Drive</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/38.jpg" alt="Panel 38"></figure>
+  <figure><img src="img/39.jpg" alt="Panel 39"></figure>
+  <figure><img src="img/40.jpg" alt="Panel 40"></figure>
+  <figure><img src="img/41.jpg" alt="Panel 41"></figure>
+  <figure><img src="img/42.jpg" alt="Panel 42"></figure>
+  <figure><img src="img/43.jpg" alt="Panel 43"></figure>
+  <figure><img src="img/44.jpg" alt="Panel 44"></figure>
+  <figure><img src="img/45.jpg" alt="Panel 45"></figure>
+  <figure><img src="img/46.jpg" alt="Panel 46"></figure>
+  <figure><img src="img/47.jpg" alt="Panel 47"></figure>
+  <figure><img src="img/48.jpg" alt="Panel 48"></figure>
+
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · Two children</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/49.jpg" alt="Panel 49"></figure>
+  <figure><img src="img/50.jpg" alt="Panel 50"></figure>
+
+  <p class="end">End of page 7</p>
+</main>
+
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
