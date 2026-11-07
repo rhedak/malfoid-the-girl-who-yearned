@@ -173,7 +173,8 @@ img {
   .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   .chapter-nav .off { color: var(--muted); opacity: .5; }
   .chapter-nav .prev { text-align: left; }
-  .chapter-nav .top { text-align: center; }
+  .chapter-nav .home { text-align: center; }
+  .chapter-nav.nav-top { margin: 0 auto; padding: 14px 0 0; border-top: 0; }
   .chapter-nav .next { text-align: right; }
   .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
   .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
@@ -194,6 +195,12 @@ img {
   .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
   .comment-form button:disabled { opacity: .6; cursor: wait; }
 </style>
+
+<nav class="chapter-nav nav-top" aria-label="Chapter navigation" data-chapter="ch01">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
 
 <header>
   <p class="kicker">Malfoid · Chapter 1</p>
@@ -291,9 +298,9 @@ img {
   <p class="end">End of page 9</p>
 </main>
 
-<nav class="chapter-nav" id="chapter-nav" aria-label="Chapter navigation" data-chapter="ch01">
+<nav class="chapter-nav" aria-label="Chapter navigation" data-chapter="ch01">
   <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
-  <a class="top" href="#">Top</a>
+  <a class="home" href="../../">Home</a>
   <span class="next off" aria-disabled="true">Next &rsaquo;</span>
 </nav>
 
@@ -312,23 +319,25 @@ img {
 <script>
 // Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
 (function () {
-  var nav = document.getElementById('chapter-nav');
-  if (!nav || !window.fetch) return;
+  var navs = document.querySelectorAll('.chapter-nav');
+  if (!navs.length || !window.fetch) return;
   fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
-    var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
-    if (i < 0) return;
-    function link(cls, ch, text) {
-      var old = nav.querySelector('.' + cls);
-      if (!ch || !old) return;
-      var a = document.createElement('a');
-      a.className = cls;
-      a.href = '../' + encodeURIComponent(ch.id) + '/';
-      a.title = ch.title;
-      a.innerHTML = text;
-      nav.replaceChild(a, old);
-    }
-    link('prev', list[i - 1], '&lsaquo; Prev');
-    link('next', list[i + 1], 'Next &rsaquo;');
+    Array.prototype.forEach.call(navs, function (nav) {
+      var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+      if (i < 0) return;
+      function link(cls, ch, text) {
+        var old = nav.querySelector('.' + cls);
+        if (!ch || !old) return;
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = '../' + encodeURIComponent(ch.id) + '/';
+        a.title = ch.title;
+        a.innerHTML = text;
+        nav.replaceChild(a, old);
+      }
+      link('prev', list[i - 1], '&lsaquo; Prev');
+      link('next', list[i + 1], 'Next &rsaquo;');
+    });
   }).catch(function () {});
 })();
 </script>
