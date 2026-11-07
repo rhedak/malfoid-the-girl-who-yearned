@@ -68,7 +68,7 @@
         const a = document.createElement("a");
         a.href = "chapters/" + encodeURIComponent(ch.id) + "/";
         const strong = document.createElement("strong");
-        strong.textContent = ch.title;
+        strong.textContent = ch.id.replace(/^ch/i, "Ch") + ": " + ch.title;
         const span = document.createElement("span");
         span.textContent = ch.summary || "";
         a.append(strong, span);
