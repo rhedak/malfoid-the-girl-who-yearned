@@ -1,0 +1,310 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>The Quiet Years · Malfoid</title>
+<meta name="description" content="The Quiet Years: Malfoid, a free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:title" content="The Quiet Years · Malfoid">
+<meta property="og:description" content="A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch01/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of Malfoid: The Girl who Yearned">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Quiet Years · Malfoid">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<link rel="canonical" href="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch01/">
+
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+  .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
+  .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
+  .comments { margin: 48px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
+  .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .like { font: inherit; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .like[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+  .like:disabled { opacity: .6; cursor: wait; }
+  .like-count, .comment-meta, .comment-status, .comment-empty { color: var(--muted); font-size: .9rem; }
+  .comment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .comment-meta { margin: 0 0 4px; }
+  .comment-body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comments, .comments * { box-sizing: border-box; min-width: 0; }
+  .comment-form { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  .comment-form input, .comment-form textarea { max-width: 100%; }
+  .comment-form input, .comment-form textarea { font: inherit; width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+  .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
+  .comment-form button:disabled { opacity: .6; cursor: wait; }
+</style>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 1</p>
+  <h1>The Quiet Years</h1>
+  <p class="meta">9 pages · 48 panels</p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">Malfoy Manor, 1982</span><span class="r">01–05</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">Tea under the stairs, 1984</span><span class="r">38–49</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">Lessons, 1985</span><span class="r">06–10</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">Tea with the Crabbes and the Goyles, 1986</span><span class="r">11–15</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">The first flight, summer 1987</span><span class="r">16–20</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">Two lives, 1988 to 1989</span><span class="r">21–26</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">Truancy and the terrace, 1989 to 1990</span><span class="r">27–46</span></a></li>
+      <li><a href="#page-8"><span class="n">Page 8</span><span class="t">The dinner and the cellar, 1990</span><span class="r">30–48</span></a></li>
+      <li><a href="#page-9"><span class="n">Page 9</span><span class="t">Privet Drive and the sky, 1990</span><span class="r">33–37</span></a></li>
+    </ol>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · Malfoy Manor, 1982</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="The great staircase and entrance hall of Malfoy Manor at dusk, warmly lit and empty. Caption: 1982."></figure>
+  <figure><img src="img/02.jpg" alt="Seen from between the stair balusters, Lucius sits at a long table with a Ministry guest, Cornelius Fudge. Fudge says: Terrible business. Terrible, what they made you do. Lucius answers: We don&#x27;t speak of it, Cornelius. Another glass?"></figure>
+  <figure><img src="img/03.jpg" alt="Close-up of two-year-old Draconia in her nightgown, gripping the stair balusters and watching with wide, serious eyes. Caption: Draconia learned early that her father was a man who was thanked."></figure>
+  <figure><img src="img/04.jpg" alt="Narcissa in a dark evening dress lifts toddler Draconia on the stairs, a finger to her lips, and says: Bed, little one. You are too young to meet the guests."></figure>
+  <figure><img src="img/05.jpg" alt="A long corridor of Malfoy Manor at night, panelled walls and a balustrade leading to a tall window where an owl crosses the moon."></figure>
+  <p class="end">End of page 1</p>
+
+  <p class="page-label" id="page-2"><span>Page 2 · Tea under the stairs, 1984</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/38.jpg" alt="Four-year-old Draconia sits on a rug under the great staircase pouring pretend tea for Dobby the house-elf, who sits opposite with a tiny cup. Caption: 1984. Draconia says: Another cup, Mr Dobby?"></figure>
+  <figure><img src="img/39.jpg" alt="Draconia beams across the tiny tea table and says: Enjoy your stay, there is more tea if you want it. Dobby gazes at his cup with huge eyes and says: Dobby has never been poured tea by a young miss before."></figure>
+  <figure><img src="img/40.jpg" alt="The tutor stands in the doorway, a dark silhouette holding a ruler across her front, and says: Stand up young miss."></figure>
+  <figure><img src="img/41.jpg" alt="Draconia sits on the rug while Dobby cringes away, bowing low with trembling hands. The tutor, ruler in hand, says: A Malfoy does not take tea with the help. Back to the schoolroom. Draconia protests: But he was only-"></figure>
+  <figure><img src="img/42.jpg" alt="Close-up of Draconia looking back over her shoulder as she is led away, puzzled and stubborn. Thought: Why is it wrong? He likes tea."></figure>
+  <figure><img src="img/49.jpg" alt="In the nursery Narcissa kneels beside Draconia and opens a basket holding a small white snake. She says: I have something for you. A suitable companion for a Malfoy. Draconia asks: ...Does she have a name? Narcissa answers: That is for you to decide."></figure>
+  <p class="end">End of page 2</p>
+
+  <p class="page-label" id="page-3"><span>Page 3 · Lessons, 1985</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/06.jpg" alt="A bright schoolroom. Five-year-old Draconia stands stiffly while the thin grey tutor, holding a ruler, says: Spine. Shoulders. Chin. A Malfoy does not slouch. Caption: 1985."></figure>
+  <figure><img src="img/07.jpg" alt="Close-up of a child&#x27;s hand copying neat lines of writing with a quill, an inkwell beside the page. Caption: Draconia spent most of her time studying every day, learning her letters, forms of address, table manners and wizarding family lineage."></figure>
+  <figure><img src="img/08.jpg" alt="In a grand sunlit room the tutor bends to guide Draconia through a dance, counting: One, two, three. One, two, three. Again."></figure>
+  <figure><img src="img/09.jpg" alt="Close-up of Draconia&#x27;s face as her eyes slide sideways toward a tall window and a bird in the sky. Thought: The birds have it nice, they can spend their days outside in the sky."></figure>
+  <figure><img src="img/10.jpg" alt="Narcissa stands in the open doorway and tells Draconia: You&#x27;re improving. Your father will be pleased. Draconia, seen from behind, answers: Yes, Mother."></figure>
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · Tea with the Crabbes and the Goyles, 1986</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/11.jpg" alt="The drawing room in 1986. Draconia sits on a sofa between two large boys, each with a plate of cake, while Lucius, Narcissa and two couples take tea on the far side of the room. Caption: 1986. Tea with the Crabbes and the Goyles."></figure>
+  <figure><img src="img/12.jpg" alt="The two boys on the sofa, cake on their knees, look past Draconia, who sits between them. One asks: ...Are you going to eat that?"></figure>
+  <figure><img src="img/13.jpg" alt="Close-up of Draconia, perfectly polite, holding a slice of cake on a plate. She says: You may have mine as well. I am not hungry. Thought: Please let this be over soon."></figure>
+  <figure><img src="img/14.jpg" alt="Across the room the adults sit with their heads close together. Lucius says: If we agree to the match, your son will have to take our name. Mr Crabbe says: But Lucius, what about our fam- Lucius cuts in: You have other children."></figure>
+  <figure><img src="img/15.jpg" alt="Draconia turns toward a tall window and the sky beyond it, her face softening. Caption: Her father called it the beginning of an alliance. She called it a long afternoon."></figure>
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · The first flight, summer 1987</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/16.jpg" alt="Summer 1987. A wide view of the Manor, its lawn and gravel drive. A girl with a dark bob, Pansy, drags a broom along the path toward Draconia, who stands waiting; a small white snake lies on the path nearby. Caption: Summer 1987."></figure>
+  <figure><img src="img/17.jpg" alt="Pansy thrusts a small broom toward Draconia, who looks at it with suspicion and longing. Pansy says: I heard you&#x27;ve never flown on a boom before. Come on. Dare you. Draconia says: I don&#x27;t take dares. Pansy answers: Liar."></figure>
+  <figure><img src="img/18.jpg" alt="Draconia, hair flying, has kicked off from the lawn on a small broom and hovers a few feet above the grass in front of the Manor, eyes wide."></figure>
+  <figure><img src="img/19.jpg" alt="A tall view from below: Draconia climbs into the sky on her broom above the Manor, shouting: Higher! On the drive far below, Pansy cups her hands and shouts: Not so high, you&#x27;ll get me in trouble! A small white snake lies beside her."></figure>
+  <figure><img src="img/20.jpg" alt="Narcissa stands at the terrace rail looking up at the sky, her teacup set down, her face unreadable. Caption: Her mother saw. She said nothing, which in that house was a kind of permission."></figure>
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · Two lives, 1988 to 1989</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/21.jpg" alt="A rainy schoolroom. Draconia reads aloud from a heavy book while the tutor sits and listens. Caption: 1988. Draconia says: ...the Statute of Secrecy, introduced in sixteen ninety-two."></figure>
+  <figure><img src="img/22.jpg" alt="Draconia in her green dress and black boots rides a small racing broom high above fields and trees, cheeks pink, grinning into the wind."></figure>
+  <figure><img src="img/23.jpg" alt="The tutor stands at a blackboard covered in family trees and says: There are twenty-eight families of the Sacred Twenty-Eight. The Malfoys among them. Draconia sits at her desk, copying."></figure>
+  <figure><img src="img/24.jpg" alt="Draconia dives steeply on her broom over a garden of hedges, her hair streaming behind her."></figure>
+  <figure><img src="img/25.jpg" alt="The tutor points at an empty desk and an open window, a quill dripping ink onto parchment, and says: She is skipping her lessons to play in the back yard. Again. She tried to charm the quill to do her assignment."></figure>
+  <figure><img src="img/26.jpg" alt="At dusk Draconia and Pansy lie on their backs on the lawn, brooms beside them, laughing, with the lit windows of the Manor behind them. Caption: Draconia could not have said which of her lives was the real one. She knew which one she woke up for."></figure>
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · Truancy and the terrace, 1989 to 1990</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/27.jpg" alt="A sunlit upstairs corridor, 1989. Pansy tiptoes ahead with a finger to her lips and Draconia follows with a book under her arm, a small white snake gliding behind them. Pansy: Quick. I&#x27;ve arranged for a distraction for your tutor. Draconia: I&#x27;m supposed to be studying. Pansy: Give me that! Caption: 1989."></figure>
+  <figure><img src="img/28.jpg" alt="Pansy pushes Draconia&#x27;s book into a flowerpot while Draconia laughs behind her hand. Draconia says: Pansy! That&#x27;s the Statute of Secrecy. Pansy answers: The plant can study it while we go flying. A small white snake lies on the floor at their feet."></figure>
+  <figure><img src="img/43.jpg" alt="Summer 1990. On the terrace Draconia, Pansy, Crabbe and Goyle sit round a white garden table playing cards and drinking lemonade, while Dobby stands beside it holding a silver tray of glasses. Caption: Summer 1990."></figure>
+  <figure><img src="img/44.jpg" alt="Pansy leans toward Draconia and nods at Dobby, who stands with the tray. Pansy says: The elf is creeping me out just standing there. Go on. Make him entertain us. Draconia, pointing at him, says: Dance for us, Dobby. Without spilling a drop."></figure>
+  <figure><img src="img/45.jpg" alt="Dobby dances stiffly and fearfully on one foot, holding the tray of glasses level, while the four children at the table laugh. Dobby says: Yes, Miss."></figure>
+  <figure><img src="img/46.jpg" alt="Close-up of Draconia holding her playing cards, her smile slipping as she glances at the tray. Thought: He&#x27;s just a house-elf. It&#x27;s not like I feel bad for him."></figure>
+  <p class="end">End of page 7</p>
+
+  <p class="page-label" id="page-8"><span>Page 8 · The dinner and the cellar, 1990</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/30.jpg" alt="A long candlelit dining table at night. Lucius sits at the far end, Narcissa in the foreground with her back to us, and Draconia at the side with her hands folded. Lucius says: Your tutor writes that you were absent from the schoolroom on four afternoons this month."></figure>
+  <figure><img src="img/31.jpg" alt="Close-up of Draconia at the table, eyes lowered, her expression even. She says: It won&#x27;t happen again, Father."></figure>
+  <figure><img src="img/32.jpg" alt="Seen over Lucius&#x27;s shoulder, Narcissa at the far end of the table lifts her glass and gives Draconia, who sits at the side, a faint smile. Caption: It did."></figure>
+  <figure><img src="img/47.jpg" alt="At night in a stone passage Draconia, in a white nightgown, kneels by a cellar door with her white snake Pearl and a napkin parcel. She says: Take it down to the cellar, Pearl. Don&#x27;t tell anyone. And if some vermin happens to eat it so what?"></figure>
+  <figure><img src="img/48.jpg" alt="At the foot of the cellar stairs, by lantern light, Pearl has set the napkin parcel on the stone floor. A few steps behind her Dobby stands with his hands clasped, waiting. Caption: Neither of them ever mentioned it."></figure>
+  <p class="end">End of page 8</p>
+
+  <p class="page-label" id="page-9"><span>Page 9 · Privet Drive and the sky, 1990</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/33.jpg" alt="Privet Drive at dusk: two red-brick houses, a car in the drive and street lamps coming on. Caption: Nine years on Privet Drive."></figure>
+  <figure><img src="img/34.jpg" alt="Nine-year-old Harry lies on a camp bed in the cupboard under the stairs, a comic on his chest, a bare bulb above him and a spider on the wall."></figure>
+  <figure><img src="img/35.jpg" alt="In the kitchen Dudley scowls as he tears open a heap of presents beside a pink birthday cake. Harry, in an oversized grey jumper, stands to one side and watches him sadly."></figure>
+  <figure><img src="img/36.jpg" alt="Close-up of Harry looking out of a window at the evening sky. Thought: Will I really spend my whole life like this?"></figure>
+  <figure><img src="img/37.jpg" alt="A tall view from high above Malfoy Manor and its gardens at sunset, with Draconia alone on her broom, arms spread wide. Captions: 1990. Both of them looked up at the sky that year looking for change."></figure>
+  <p class="end">End of page 9</p>
+</main>
+
+<section id="comments" class="comments" data-chapter="ch01" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
+
+<footer class="site-footer">
+  <p><a class="chat" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener">💬 Chat with her in your browser ↗</a></p>
+  <p><a href="../../">Malfoid: The Girl who Yearned</a> · <a href="https://rhedak.github.io/malfoid-gallery/">Malfoid Gallery</a> · <a href="https://github.com/rhedak/malfoid-the-girl-who-yearned">Source on GitHub</a></p>
+  <p>A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.</p>
+</footer>
+
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<script src="../../comments.js" defer></script>
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
