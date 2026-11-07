@@ -166,7 +166,16 @@ img {
 }
   .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
   .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
-  .comments { margin: 48px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .chapter-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 720px; margin: 48px auto 0; padding: 14px 0 0; border-top: 1px solid var(--rule); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: 0.08em; }
+  .chapter-nav a, .chapter-nav .off { flex: 1 1 0; padding: 6px 4px; text-decoration: none; }
+  .chapter-nav a { color: var(--accent); }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chapter-nav .off { color: var(--muted); opacity: .5; }
+  .chapter-nav .prev { text-align: left; }
+  .chapter-nav .top { text-align: center; }
+  .chapter-nav .next { text-align: right; }
+  .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
   .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
   .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
   .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
@@ -276,6 +285,12 @@ img {
   <p class="end">End of page 7</p>
 </main>
 
+<nav class="chapter-nav" id="chapter-nav" aria-label="Chapter navigation" data-chapter="ch00">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="top" href="#">Top</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
 <section id="comments" class="comments" data-chapter="ch00" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
 
 <footer class="site-footer">
@@ -288,6 +303,29 @@ img {
         async src="//gc.zgo.at/count.js"></script>
 
 <script src="../../comments.js" defer></script>
+<script>
+// Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
+(function () {
+  var nav = document.getElementById('chapter-nav');
+  if (!nav || !window.fetch) return;
+  fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+    if (i < 0) return;
+    function link(cls, ch, text) {
+      var old = nav.querySelector('.' + cls);
+      if (!ch || !old) return;
+      var a = document.createElement('a');
+      a.className = cls;
+      a.href = '../' + encodeURIComponent(ch.id) + '/';
+      a.title = ch.title;
+      a.innerHTML = text;
+      nav.replaceChild(a, old);
+    }
+    link('prev', list[i - 1], '&lsaquo; Prev');
+    link('next', list[i + 1], 'Next &rsaquo;');
+  }).catch(function () {});
+})();
+</script>
 <script>
 // Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
 document.addEventListener('click', function (e) {
