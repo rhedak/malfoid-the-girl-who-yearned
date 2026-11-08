@@ -37,6 +37,7 @@
   .chapters a:hover, .chapters a:focus-visible { border-color: var(--accent); }
   .chapters strong { display: block; color: var(--accent); }
   .chapters span { color: var(--muted); font-size: .95rem; }
+  .chapters .release { display: block; margin-top: 4px; color: var(--muted); font-size: .8rem; }
   .empty { color: var(--muted); padding: 24px 0; text-align: center; }
   footer { max-width: 720px; margin: 48px auto 0; color: var(--muted); font-size: .9rem; text-align: center; }
   .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
@@ -76,6 +77,14 @@
         const span = document.createElement("span");
         span.textContent = ch.summary || "";
         a.append(strong, span);
+        if (ch.version && ch.published) {
+          // Release line: version, first publication and last update (ISO dates from chapters/index.json).
+          const fmt = iso => new Date(iso + "T12:00:00Z").toLocaleDateString("en-GB", { day: "numeric", month: "long", year: "numeric", timeZone: "UTC" });
+          const rel = document.createElement("small");
+          rel.className = "release";
+          rel.textContent = "Version " + ch.version + " · Published " + fmt(ch.published) + (ch.updated ? " · Updated " + fmt(ch.updated) : "");
+          a.append(rel);
+        }
         li.append(a);
         ul.append(li);
       });
