@@ -2,11 +2,25 @@
   {
     "id": "ch00",
     "title": "The Boy and the Girl",
-    "summary": "Prologue. 31 October 1981."
+    "summary": "Prologue. 31 October 1981.",
+    "version": "1.0",
+    "published": "2026-11-05",
+    "updated": "2026-11-05"
   },
   {
     "id": "ch01",
     "title": "The Quiet Years",
-    "summary": "Malfoy Manor and Privet Drive, 1982 to 1990."
+    "summary": "Malfoy Manor and Privet Drive, 1982 to 1990.",
+    "version": "1.0",
+    "published": "2026-11-07",
+    "updated": "2026-11-07"
+  },
+  {
+    "id": "ch02",
+    "title": "Eleven",
+    "summary": "The Hogwarts letter and Draconia's eleventh birthday, May to June 1991.",
+    "version": "1.0",
+    "published": "2026-11-08",
+    "updated": "2026-11-08"
   }
 ]

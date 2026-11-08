@@ -1,0 +1,353 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Eleven · Malfoid</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../icon-192.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="description" content="Eleven: Malfoid, a free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:title" content="Eleven · Malfoid">
+<meta property="og:description" content="A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch02/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of Malfoid: The Girl who Yearned">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eleven · Malfoid">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<link rel="canonical" href="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch02/">
+
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+  .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
+  .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
+  .chapter-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 720px; margin: 48px auto 0; padding: 14px 0 0; border-top: 1px solid var(--rule); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: 0.08em; }
+  .chapter-nav a, .chapter-nav .off { flex: 1 1 0; padding: 6px 4px; text-decoration: none; }
+  .chapter-nav a { color: var(--accent); }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chapter-nav .off { color: var(--muted); opacity: .5; }
+  .chapter-nav .prev { text-align: left; }
+  .chapter-nav .home { text-align: center; }
+  .chapter-nav.nav-top { margin: 0 auto; padding: 14px 0 0; border-top: 0; }
+  .chapter-nav .next { text-align: right; }
+  .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
+  .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .like { font: inherit; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .like[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+  .like:disabled { opacity: .6; cursor: wait; }
+  .like-count, .comment-meta, .comment-status, .comment-empty { color: var(--muted); font-size: .9rem; }
+  .comment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .comment-meta { margin: 0 0 4px; }
+  .comment-body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comments, .comments * { box-sizing: border-box; min-width: 0; }
+  .comment-form { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  .comment-form input, .comment-form textarea { max-width: 100%; }
+  .comment-form input, .comment-form textarea { font: inherit; width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+  .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
+  .comment-form button:disabled { opacity: .6; cursor: wait; }
+</style>
+
+<nav class="chapter-nav nav-top" aria-label="Chapter navigation" data-chapter="ch02">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 2</p>
+  <h1>Eleven</h1>
+  <p class="meta">8 pages · 43 panels</p>
+  <p class="meta release">Version 1.0 · Published <time datetime="2026-11-08">8 November 2026</time> · Updated <time datetime="2026-11-08">8 November 2026</time></p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">The letter, May 1991</span><span class="r">01–05</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">Lucius reads the letter</span><span class="r">06–10</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">Three reasons</span><span class="r">11–16</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">The party begins, 8 June 1991</span><span class="r">17–21</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">The presents</span><span class="r">22–26</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">The servicing kit</span><span class="r">27–32</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">After the guests</span><span class="r">33–37</span></a></li>
+      <li><a href="#page-8"><span class="n">Page 8</span><span class="t">The zoo and the cupboard, late June 1991</span><span class="r">38–43</span></a></li>
+    </ol>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · The letter, May 1991</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="Far down a gravel drive, a tall figure in long dark robes walks towards the pale stone front of Malfoy Manor, a cream envelope in one hand, a fountain ahead of him. Caption: May 1991."></figure>
+  <figure><img src="img/02.jpg" alt="Seen from inside the hall, Dobby the house-elf holds the great front door open while Snape stands against the bright light on the step. Dobby says: Professor Snape, sir! Dobby will tell the Master at once. Snape answers: No need. I am expected."></figure>
+  <figure><img src="img/03.jpg" alt="Seen from below, Narcissa in a dark blue dress rests a hand on the banister of the great staircase with ten-year-old Draconia at her side, both looking down into the hall. Narcissa says: Severus. An owl would have done."></figure>
+  <figure><img src="img/04.jpg" alt="In the hall, Snape bends towards Draconia, who stands with her back to us, and holds out a thick cream envelope with a purple wax seal. He says: Miss Malfoy. This belongs to you."></figure>
+  <figure><img src="img/05.jpg" alt="Close-up of Draconia&#x27;s two hands holding the envelope, her thumbs on the purple seal. Thought: The letter... my life is about to change."></figure>
+  <p class="end">End of page 1</p>
+
+  <p class="page-label" id="page-2"><span>Page 2 · Lucius reads the letter</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/06.jpg" alt="Lucius stands in the dining-room doorway in dark robes with his serpent cane while Snape, Narcissa and Draconia stand in the hall, Draconia holding the envelope. Lucius says: Severus. You came yourself. Snape answers: I thought it fitting that a Slytherin should bring it."></figure>
+  <figure><img src="img/07.jpg" alt="Lucius&#x27;s hand lifts the envelope out of Draconia&#x27;s open hands. She looks up at him, worried. Lucius says: Let me see."></figure>
+  <figure><img src="img/08.jpg" alt="Lucius reads the letter held in front of him, his lip curling. He says: Albus Dumbledore. Mudblood-lover. The worst Headmaster that school has ever had."></figure>
+  <figure><img src="img/09.jpg" alt="Lucius rants, the crumpled letter in one fist and his serpent cane in the other, while Snape stands beside him in silence. Lucius says: Muggle-borns by the cartload, and the Ministry applauds him for it."></figure>
+  <figure><img src="img/10.jpg" alt="Lucius stops in the hall and turns to look down at Draconia, who looks up at him. He says: If I could, you would go to Durmstrang. Draconia asks: Why can&#x27;t I go?"></figure>
+  <p class="end">End of page 2</p>
+
+  <p class="page-label" id="page-3"><span>Page 3 · Three reasons</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/11.jpg" alt="Lucius, one finger raised, counts his reasons on the great staircase landing. He says: The Ministry would not like a Malfoy sent abroad in this climate. And every Malfoy has been in Slytherin. I am not a man to break with tradition."></figure>
+  <figure><img src="img/12.jpg" alt="In profile, Lucius raises a third finger while Snape, behind him, watches with only his eyes moving. Lucius says: And Harry Potter will be there this year."></figure>
+  <figure><img src="img/13.jpg" alt="Lucius bends over Draconia and lifts her chin with one finger. He says: Some say a boy who could defeat the Dark Lord must be a Dark Wizard himself. His parents were Gryffindors. His mother was a Mudblood. It could go either way. From off frame Snape says: Keep an eye on him."></figure>
+  <figure><img src="img/14.jpg" alt="Close-up of Draconia with lowered eyes, while behind her Lucius, the crumpled letter in his fist, climbs the great staircase. Thought: It was my letter."></figure>
+  <figure><img src="img/15.jpg" alt="Narcissa kneels to Draconia&#x27;s height, smooths the creased letter against her knee and presses it into Draconia&#x27;s hands. She says: We will go to Diagon Alley after your party. Robes, books, a wand. All of it."></figure>
+  <figure><img src="img/16.jpg" alt="Split panel. Left: Draconia, chin lifted, the smoothed letter held to her chest, calls up. Right: Lucius, a few steps up the great staircase, looks back with a hand on the rail. Draconia asks: Father, may I have a racing broom? Lucius answers: Once you make the House team."></figure>
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · The party begins, 8 June 1991</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/17.jpg" alt="Draconia&#x27;s eleventh birthday party on the terrace and lawn of Malfoy Manor: dozens of guests in formal robes, tables laden with presents, house-elf Dobby carrying a stack of plates. Captions: 8 June 1991. Draconia&#x27;s eleventh birthday party was the social event of the summer."></figure>
+  <figure><img src="img/18.jpg" alt="Lucius with his cane, Narcissa and Draconia in a silver-grey party dress with a dark green sash stand in a receiving line at the head of the terrace steps. Narcissa says: Chin up. Smile. They are here to be seen with us."></figure>
+  <figure><img src="img/19.jpg" alt="Lucius speaks quietly to Mr Nott by the terrace rail while Theodore, Draconia and Narcissa stand a few paces off. Lucius says: Nice to see you, Mr Nott. Have you thought about my offer? Mr Nott answers: I am sorry, Mr Malfoy, but the answer is still no."></figure>
+  <figure><img src="img/20.jpg" alt="Split panel. Left: Theodore Nott, a boy in a navy suit, looks sideways with a weary face. Right: Draconia looks back at him with a small, relieved smile. Thought: He does not seem to like the adults deciding his future either."></figure>
+  <figure><img src="img/21.jpg" alt="Pansy in a rose-pink party dress with a lace collar runs up to Draconia with her arms flung wide. Pansy says: Draconia, finally! What&#x27;s with this dress? Draconia answers: Mother chose it."></figure>
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · The presents</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/22.jpg" alt="Daphne Greengrass in a lilac dress pushes in between Pansy and Draconia and takes an arm of each. Daphne says: Happy birthday, Draconia! May I join you two? Pansy mutters: If you must."></figure>
+  <figure><img src="img/23.jpg" alt="Draconia and Narcissa stand beside a mountain of wrapped presents on a round table, with Crabbe, Goyle and their parents in a half-circle watching. Caption: Her presents were all things a lady, or a Hogwarts student, would want."></figure>
+  <figure><img src="img/24.jpg" alt="Close-up of Draconia&#x27;s bare hands lifting the lid of a green velvet case on a white tablecloth, a silver quill inside. She says: How thoughtful. Thank you."></figure>
+  <figure><img src="img/25.jpg" alt="Draconia stands behind the presents table smiling politely, a pile of gifts, folded shirts, books and a trunk with a gold D rising beside her. Thought: Seven quills. I have one hand."></figure>
+  <figure><img src="img/26.jpg" alt="Dobby carries a silver tray of glasses past, his huge green eyes on us, while Draconia stands small and out of focus behind him with a sullen face. Thought: Stupid elf gets to be here, distracting me from my party, while Pearl has to stay in my room."></figure>
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · The servicing kit</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/27.jpg" alt="On the lawn below the terrace Pansy tugs Draconia&#x27;s arm towards a gap in the hedge while Draconia glances back at the party. Pansy says: Ten minutes. Nobody will notice. Draconia answers: I can&#x27;t. I&#x27;m the one they are all here for."></figure>
+  <figure><img src="img/28.jpg" alt="Narcissa rests a hand on Draconia&#x27;s shoulder while Pansy looks away sulkily and Daphne waits with a plate of cake. Narcissa says: Draconia. The Greengrasses wish to congratulate you."></figure>
+  <figure><img src="img/29.jpg" alt="Behind the presents table, Pansy presses a flat parcel in brown paper and string into Draconia&#x27;s hands, a finger to her lips. Pansy says: Not here. Open it when nobody is looking."></figure>
+  <figure><img src="img/30.jpg" alt="Close-up from above of Draconia&#x27;s hands holding open a brown paper parcel on a white tablecloth, showing a leather case with a jar of handle polish, silver clippers, a brass compass and a worn green handbook. Caption: A broomstick servicing kit."></figure>
+  <figure><img src="img/31.jpg" alt="Close-up of Draconia&#x27;s face in dappled light, smiling for the first time that day, tiny and astonished, the party blurred behind her. Thought: She knew."></figure>
+  <figure><img src="img/32.jpg" alt="Narcissa lifts a teacup on the terrace, hiding the faintest smile, the party blurred behind her. Caption: Her mother said nothing."></figure>
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · After the guests</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/33.jpg" alt="At dusk under a pink sunset Lucius shakes hands with Mr Crabbe while Mr Goyle stands beside them, the lanterns of the drive lit behind. Lucius says: We must dine soon. All of us."></figure>
+  <figure><img src="img/34.jpg" alt="Split panel at dusk. Left: Draconia on the front steps waves with a bright smile. Right: the moment the guests have turned away, her smile is gone and she looks away."></figure>
+  <figure><img src="img/35.jpg" alt="In the hall Narcissa, arms folded, looks away from Draconia, who stands beside her with a brown paper parcel hidden behind her back. Narcissa says: I am going to be in the drawing room for half an hour. I did not see where you went."></figure>
+  <figure><img src="img/36.jpg" alt="In the golden evening light Draconia, her dress hitched up, sits on the terrace steps with her small old broom across her knees, clipping its twigs with the new kit open beside her, while her white snake Pearl lies on the warm stone. Thought: It&#x27;s too small. It&#x27;s too slow. I can&#x27;t make the team on this."></figure>
+  <figure><img src="img/37.jpg" alt="Seen from below, Draconia laughs on her polished little broom against a pink and gold sunset sky, the Manor&#x27;s chimneys small beneath her. Caption: Once you make the House team."></figure>
+  <p class="end">End of page 7</p>
+
+  <p class="page-label" id="page-8"><span>Page 8 · The zoo and the cupboard, late June 1991</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/38.jpg" alt="Late June. In the dim reptile house of a London zoo, Vernon and Dudley lean over the glass of a boa constrictor tank while Harry stands a little apart, hands in his pockets. Captions: Late June. Dudley turned eleven too."></figure>
+  <figure><img src="img/39.jpg" alt="Dudley beats on the glass with his fist while Vernon points at the sleeping boa. Dudley shouts: Make it move! Vernon says: Wake up, you dozy thing!"></figure>
+  <figure><img src="img/40.jpg" alt="Split panel. Left: Harry stands at the glass with a small smile and a hand against it. Right: the huge boa has lifted its head and looks straight at him. Harry says: Sorry about him. He&#x27;s like that with everyone."></figure>
+  <figure><img src="img/41.jpg" alt="Split panel. Left: Dudley leaps back with his arms flung up, howling, as the huge boa slides out of the tank past him. Right: Harry sits on the floor as the snake glides by. Vernon shouts from off frame: DUDLEY! The boa says: Thanksss, amigo."></figure>
+  <figure><img src="img/42.jpg" alt="Split panel back home. Left: Vernon, hand on his hip, looms over Harry in the hall and demands an answer while Harry shrugs, palms up. Right: Vernon&#x27;s face has gone red as he shouts, fist raised. Vernon says: How did you do that? Harry answers: I don&#x27;t know, it was like magic! Vernon yells: There is no such thing as magic!"></figure>
+  <figure><img src="img/43.jpg" alt="Night in the cupboard under the stairs: Harry sits on the camp bed under a bare bulb, looking at his open hands, a spider on the floor. Thought: How did I do that?"></figure>
+  <p class="end">End of page 8</p>
+</main>
+
+<nav class="chapter-nav" aria-label="Chapter navigation" data-chapter="ch02">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<section id="comments" class="comments" data-chapter="ch02" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
+
+<footer class="site-footer">
+  <p><a class="chat" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener">💬 Chat with her in your browser ↗</a></p>
+  <p><a href="../../">Malfoid: The Girl who Yearned</a> · <a href="https://rhedak.github.io/malfoid-gallery/">Malfoid Gallery</a> · <a href="https://github.com/rhedak/malfoid-the-girl-who-yearned">Source on GitHub</a></p>
+  <p>A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.</p>
+</footer>
+
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<script src="../../comments.js" defer></script>
+<script>
+// Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
+(function () {
+  var navs = document.querySelectorAll('.chapter-nav');
+  if (!navs.length || !window.fetch) return;
+  fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    Array.prototype.forEach.call(navs, function (nav) {
+      var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+      if (i < 0) return;
+      function link(cls, ch, text) {
+        var old = nav.querySelector('.' + cls);
+        if (!ch || !old) return;
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = '../' + encodeURIComponent(ch.id) + '/';
+        a.title = ch.title;
+        a.innerHTML = text;
+        nav.replaceChild(a, old);
+      }
+      link('prev', list[i - 1], '&lsaquo; Prev');
+      link('next', list[i + 1], 'Next &rsaquo;');
+    });
+  }).catch(function () {});
+})();
+</script>
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
