@@ -1,0 +1,359 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>The Letters and the Storm · Malfoid</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../icon-192.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="description" content="The Letters and the Storm: Malfoid, a free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:title" content="The Letters and the Storm · Malfoid">
+<meta property="og:description" content="A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch03/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of Malfoid: The Girl who Yearned">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Letters and the Storm · Malfoid">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<link rel="canonical" href="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch03/">
+
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+  .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
+  .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
+  .chapter-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 720px; margin: 48px auto 0; padding: 14px 0 0; border-top: 1px solid var(--rule); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: 0.08em; }
+  .chapter-nav a, .chapter-nav .off { flex: 1 1 0; padding: 6px 4px; text-decoration: none; }
+  .chapter-nav a { color: var(--accent); }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chapter-nav .off { color: var(--muted); opacity: .5; }
+  .chapter-nav .prev { text-align: left; }
+  .chapter-nav .home { text-align: center; }
+  .chapter-nav.nav-top { margin: 0 auto; padding: 14px 0 0; border-top: 0; }
+  .chapter-nav .next { text-align: right; }
+  .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
+  .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .like { font: inherit; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .like[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+  .like:disabled { opacity: .6; cursor: wait; }
+  .like-count, .comment-meta, .comment-status, .comment-empty { color: var(--muted); font-size: .9rem; }
+  .comment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .comment-meta { margin: 0 0 4px; }
+  .comment-body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comments, .comments * { box-sizing: border-box; min-width: 0; }
+  .comment-form { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  .comment-form input, .comment-form textarea { max-width: 100%; }
+  .comment-form input, .comment-form textarea { font: inherit; width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+  .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
+  .comment-form button:disabled { opacity: .6; cursor: wait; }
+</style>
+
+<nav class="chapter-nav nav-top" aria-label="Chapter navigation" data-chapter="ch03">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 3</p>
+  <h1>The Letters and the Storm</h1>
+  <p class="meta">9 pages · 45 panels</p>
+  <p class="meta release">Version 1.0 · Published <time datetime="2026-11-11">11 November 2026</time> · Updated <time datetime="2026-11-11">11 November 2026</time></p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">The blood list, July 1991</span><span class="r">01–05</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">The window</span><span class="r">06–10</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">The first letter, 24 July 1991</span><span class="r">11–15</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">The letters multiply</span><span class="r">16–20</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">The flood, and the Dursleys flee</span><span class="r">21–25</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">The hotel, the drive and the rock</span><span class="r">26–30</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">The hut on the rock</span><span class="r">31–35</span></a></li>
+      <li><a href="#page-8"><span class="n">Page 8</span><span class="t">The small hours of 31 July</span><span class="r">36–40</span></a></li>
+      <li><a href="#page-9"><span class="n">Page 9</span><span class="t">Both sides set out, 31 July 1991</span><span class="r">41–45</span></a></li>
+    </ol>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · The blood list, July 1991</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="Wide shot of the schoolroom from the doorway corner, a big hand-lettered chart of names hung on the wall, the tutor beside it, Draconia at the desk."></figure>
+  <figure><img src="img/02.jpg" alt="Close-up of the pointer tapping names on the chart, the tutor&#x27;s gloved hand and part of her grey sleeve."></figure>
+  <figure><img src="img/03.jpg" alt="Draconia at the desk, medium close-up, writing in a notebook."></figure>
+  <figure><img src="img/04.jpg" alt="The tutor in close three-quarter view, her mouth thin, the pointer lowered."></figure>
+  <figure><img src="img/05.jpg" alt="Draconia&#x27;s notebook page from above, her hand adding one last name at the bottom of the list."></figure>
+  <p class="end">End of page 1</p>
+
+  <p class="page-label" id="page-2"><span>Page 2 · The window</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/06.jpg" alt="Close-up of the pointer stopping above the last name on the chart, a name inked more freshly than the rest."></figure>
+  <figure><img src="img/07.jpg" alt="Medium shot, Draconia looking up from her notebook with real interest, the tutor half in frame."></figure>
+  <figure><img src="img/08.jpg" alt="Two-shot, Draconia in the foreground turned to the tutor, a long look between them."></figure>
+  <figure><img src="img/09.jpg" alt="Medium shot of Draconia at the desk with her feet and the rug in the frame, chin on her hand, eyes drifting away from the lesson."></figure>
+  <figure><img src="img/10.jpg" alt="Draconia seen from behind at the open window, the summer lawn and sky beyond, a single owl crossing the blue."></figure>
+  <p class="end">End of page 2</p>
+
+  <p class="page-label" id="page-3"><span>Page 3 · The first letter, 24 July 1991</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/11.jpg" alt="The Dursleys&#x27; kitchen at breakfast, Harry at the door to the hall, the post just landed."></figure>
+  <figure><img src="img/12.jpg" alt="Harry alone in the hall, close-up of his face and of the thick envelope in his hands."></figure>
+  <figure><img src="img/13.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, Harry reaching up for the letter in Vernon&#x27;s raised hand; right, a close-up of Vernon&#x27;s face gone grey."></figure>
+  <figure><img src="img/14.jpg" alt="Low view from the hall floor, Harry lying on his stomach with his ear to the crack under the kitchen door, Vernon&#x27;s shiny black shoes pacing beyond."></figure>
+  <figure><img src="img/15.jpg" alt="Vernon squeezed into the cupboard under the stairs doorway, Harry sitting on the camp bed looking up at him."></figure>
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · The letters multiply</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/16.jpg" alt="Harry on the bed in the second bedroom among broken toys, looking at nothing."></figure>
+  <figure><img src="img/17.jpg" alt="Harry at the foot of the stairs, startled, Vernon in a sleeping bag on the doormat spotting him and yelling, lights coming on upstairs."></figure>
+  <figure><img src="img/18.jpg" alt="Medium close-up of the front door from beside and a little behind Vernon (his shoulder and arm cropped in the left foreground), a board across the letterbox, his hand nailing it shut, Petunia&#x27;s hand with a plate of cake at the right edge."></figure>
+  <figure><img src="img/19.jpg" alt="The Number Four hall from the stairs, letters pouring through every crack in the boarded doors, Vernon boarding the last gap."></figure>
+  <figure><img src="img/20.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, an arm through the living-room window holding out a carton of eggs, Petunia taking it; right, Petunia feeding a letter into a food processor, Dudley watching with his mouth open."></figure>
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · The flood, and the Dursleys flee</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/21.jpg" alt="Vernon at the breakfast table, cheerful and a little ill, spreading marmalade on his newspaper."></figure>
+  <figure><img src="img/22.jpg" alt="The same breakfast table as the panel before, the fireplace now spitting letters across the kitchen, the Dursleys shocked and Harry delighted."></figure>
+  <figure><img src="img/23.jpg" alt="Vernon in the hall shouting, a big tuft of his moustache torn out, the others behind him."></figure>
+  <figure><img src="img/24.jpg" alt="The silver saloon speeding down a country road, seen from the front, the four of them visible through the windscreen."></figure>
+  <figure><img src="img/25.jpg" alt="Harry sitting on a hotel window sill at night, the lights of passing cars below, Dudley asleep in the twin bed behind."></figure>
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · The hotel, the drive and the rock</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/26.jpg" alt="Close-up of an arm holding up a thick wad of yellow envelopes beside Vernon&#x27;s startled face, the hotel dining room soft behind."></figure>
+  <figure><img src="img/27.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, Vernon standing alone in a forest clearing looking around; right, the silver car crossing a suspension bridge, very small."></figure>
+  <figure><img src="img/28.jpg" alt="View from the back seat of the car, rain on the glass, the sea grey beyond, Dudley whining in the foreground, Harry thinking."></figure>
+  <figure><img src="img/29.jpg" alt="Wide view from the shore of a lone rock in a grey sea with a tiny shack on top, Vernon in the foreground pointing, the family behind him."></figure>
+  <figure><img src="img/30.jpg" alt="Low view over the bows of a small rowing boat on the grey sea, Vernon rowing, the others hunched, the rock ahead."></figure>
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · The hut on the rock</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/31.jpg" alt="The hut&#x27;s single room, the family around a damp empty fireplace, smoke from burning chip bags."></figure>
+  <figure><img src="img/32.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, Harry awake on the floor under a thin blanket in the storm; right, a close-up of Dudley&#x27;s digital watch dangling over the sofa arm, the display reading 23:59."></figure>
+  <figure><img src="img/33.jpg" alt="Harry sitting bolt upright on the floor, staring at the door, a violent flash of lightning behind him."></figure>
+  <figure><img src="img/34.jpg" alt="Wide shot of the broken doorway, Hagrid&#x27;s huge silhouette filling it, the door in his hand, rain behind him, the Dursleys frozen in the room."></figure>
+  <figure><img src="img/35.jpg" alt="Close-up of Hagrid crouching, one great hand holding out a squashed cake box to Harry."></figure>
+  <p class="end">End of page 7</p>
+
+  <p class="page-label" id="page-8"><span>Page 8 · The small hours of 31 July</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/36.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, Vernon in the doorway of the second room aiming a rifle with shaking hands; right, Hagrid twisting the rifle barrel into a knot."></figure>
+  <figure><img src="img/37.jpg" alt="Close-up of Harry reading the opened letter, Hagrid&#x27;s great hand and beard at the edge of the picture."></figure>
+  <figure><img src="img/38.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, Vernon red-faced and shouting; right, Hagrid turned to him with a calm, level look."></figure>
+  <figure><img src="img/39.jpg" alt="Hagrid lighting the damp hearth with a pink umbrella, a sudden roaring fire, the Dursleys backed against the wall, Harry wrapped in a huge coat."></figure>
+  <figure><img src="img/40.jpg" alt="Harry asleep under the coat by the fire in the first light, Hagrid shaking his shoulder, dawn at the window."></figure>
+  <p class="end">End of page 8</p>
+
+  <p class="page-label" id="page-9"><span>Page 9 · Both sides set out, 31 July 1991</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/41.jpg" alt="Draconia&#x27;s bedroom, medium close-up from where the mirror hangs (the mirror is off camera), Draconia facing us smoothing her collar, Pearl stretched along the bed behind her."></figure>
+  <figure><img src="img/42.jpg" alt="Medium shot in the Manor hall, Narcissa kneeling in profile smoothing Draconia&#x27;s collar, Lucius waiting behind them at the open door with his cane."></figure>
+  <figure><img src="img/43.jpg" alt="The three Malfoys dressed up walking down the front steps of the Manor towards the viewer, closer medium shot; Lucius&#x27;s cane on the step, Narcissa&#x27;s hand held out to Draconia."></figure>
+  <figure><img src="img/44.jpg" alt="Close-up of Narcissa&#x27;s bare hand closing around Draconia&#x27;s, the world beginning to twist around them."></figure>
+  <figure><img src="img/45.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, the Malfoys just arrived at the mouth of Knockturn Alley, a last swirl of light fading around them; right, Harry and Hagrid in a small rowing boat leaving the rock at dawn."></figure>
+  <p class="end">End of page 9</p>
+</main>
+
+<nav class="chapter-nav" aria-label="Chapter navigation" data-chapter="ch03">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<section id="comments" class="comments" data-chapter="ch03" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
+
+<footer class="site-footer">
+  <p><a class="chat" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener">💬 Chat with her in your browser ↗</a></p>
+  <p><a href="../../">Malfoid: The Girl who Yearned</a> · <a href="https://rhedak.github.io/malfoid-gallery/">Malfoid Gallery</a> · <a href="https://rhedak.github.io/rhedak-bio/">About the author</a> · <a href="https://github.com/rhedak/malfoid-the-girl-who-yearned">Source on GitHub</a></p>
+  <p>A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.</p>
+</footer>
+
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<script src="../../comments.js" defer></script>
+<script>
+// Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
+(function () {
+  var navs = document.querySelectorAll('.chapter-nav');
+  if (!navs.length || !window.fetch) return;
+  fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    Array.prototype.forEach.call(navs, function (nav) {
+      var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+      if (i < 0) return;
+      function link(cls, ch, text) {
+        var old = nav.querySelector('.' + cls);
+        if (!ch || !old) return;
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = '../' + encodeURIComponent(ch.id) + '/';
+        a.title = ch.title;
+        a.innerHTML = text;
+        nav.replaceChild(a, old);
+      }
+      link('prev', list[i - 1], '&lsaquo; Prev');
+      link('next', list[i + 1], 'Next &rsaquo;');
+    });
+  }).catch(function () {});
+})();
+</script>
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
