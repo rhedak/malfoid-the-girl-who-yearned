@@ -1,0 +1,368 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Madam Malkin&#x27;s · Malfoid</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../icon-192.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="description" content="Madam Malkin&#x27;s: Malfoid, a free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:title" content="Madam Malkin&#x27;s · Malfoid">
+<meta property="og:description" content="A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch06/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of Malfoid: The Girl who Yearned">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Madam Malkin&#x27;s · Malfoid">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<link rel="canonical" href="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch06/">
+
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+  .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
+  .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
+  .chapter-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 720px; margin: 48px auto 0; padding: 14px 0 0; border-top: 1px solid var(--rule); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: 0.08em; }
+  .chapter-nav a, .chapter-nav .off { flex: 1 1 0; padding: 6px 4px; text-decoration: none; }
+  .chapter-nav a { color: var(--accent); }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chapter-nav .off { color: var(--muted); opacity: .5; }
+  .chapter-nav .prev { text-align: left; }
+  .chapter-nav .home { text-align: center; }
+  .chapter-nav.nav-top { margin: 0 auto; padding: 14px 0 0; border-top: 0; }
+  .chapter-nav .next { text-align: right; }
+  .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
+  .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .like { font: inherit; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .like[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+  .like:disabled { opacity: .6; cursor: wait; }
+  .like-count, .comment-meta, .comment-status, .comment-empty { color: var(--muted); font-size: .9rem; }
+  .comment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .comment-meta { margin: 0 0 4px; }
+  .comment-body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comments, .comments * { box-sizing: border-box; min-width: 0; }
+  .comment-form { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  .comment-form input, .comment-form textarea { max-width: 100%; }
+  .comment-form input, .comment-form textarea { font: inherit; width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+  .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
+  .comment-form button:disabled { opacity: .6; cursor: wait; }
+</style>
+
+<nav class="chapter-nav nav-top" aria-label="Chapter navigation" data-chapter="ch06">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 6</p>
+  <h1>Madam Malkin&#x27;s</h1>
+  <p class="meta">10 pages · 50 panels</p>
+  <p class="meta release">Version 1.0 · Published <time datetime="2026-11-17">17 November 2026</time> · Updated <time datetime="2026-11-17">17 November 2026</time></p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">The other stool</span><span class="r">01–05</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">Hogwarts, too?</span><span class="r">06–10</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">The smuggled broom</span><span class="r">11–15</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">Quidditch and the Houses</span><span class="r">16–20</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">A man at the window</span><span class="r">21–25</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">Servant, gamekeeper, savage</span><span class="r">26–30</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">Where are your parents?</span><span class="r">31–35</span></a></li>
+      <li><a href="#page-8"><span class="n">Page 8</span><span class="t">The other sort</span><span class="r">36–40</span></a></li>
+      <li><a href="#page-9"><span class="n">Page 9</span><span class="t">Alone on the stool</span><span class="r">41–45</span></a></li>
+      <li><a href="#page-10"><span class="n">Page 10</span><span class="t">Mother</span><span class="r">46–50</span></a></li>
+    </ol>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · The other stool</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="Medium shot from inside the shop of Harry pushing open the shop door and stepping in, nervous, one hand still on the handle, the little bell above the door ringing."></figure>
+  <figure><img src="img/02.jpg" alt="Medium shot of Madam Malkin turning from her counter with a welcoming smile, one hand lifted towards the back of the shop."></figure>
+  <figure><img src="img/03.jpg" alt="Medium shot from the south-south-west, as Harry sees her: Draconia on the LEFT (far) footstool in clear profile facing the blank mirror, in long black pinned robes she is already wearing, looking at herself in the mirror, not at him; the assistant kneeling at her hem pinning it; the other footstool empty; Harry and Madam Malkin out of view."></figure>
+  <figure><img src="img/04.jpg" alt="Medium shot of Harry standing on a low footstool, a long black robe just pulled on over his head, his head coming out of the neck opening with messy hair, glasses a little crooked and a surprised face, Madam Malkin beside him pulling the robe straight at his shoulders, his faded blue sweatshirt cuffs and beige trousers showing."></figure>
+  <figure><img src="img/05.jpg" alt="Wide shot of the back of the shop, Harry and Draconia standing on two low footstools a few steps apart, both in long black robes being pinned, Madam Malkin kneeling at Harry&#x27;s hem and the assistant kneeling at Draconia&#x27;s, Draconia turning her head to look at Harry."></figure>
+  <p class="end">End of page 1</p>
+
+  <p class="page-label" id="page-2"><span>Page 2 · Hogwarts, too?</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/06.jpg" alt="Medium close-up of Draconia on her footstool in black pinned robes, her head and shoulders turned towards the camera, chin lifted, curious and a little imperious."></figure>
+  <figure><img src="img/07.jpg" alt="Medium close-up of Harry in a black pinned robe, his head turned to the side towards the other stool, hesitant and polite."></figure>
+  <figure><img src="img/08.jpg" alt="High-angle close-up of Harry&#x27;s worn white trainers on the dark wood footstool under the hem of the new black robe, a few pins in the hem, a bit of rolled beige trouser leg."></figure>
+  <figure><img src="img/09.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, a full-length view of Draconia standing ON her LEFT footstool with both feet on its top, her eyes dropping to her small wand box on the rug beside the stool; right, a waist-up close-up of Draconia lifting her chin and speaking confidently, no stool and no floor in frame."></figure>
+  <figure><img src="img/10.jpg" alt="Medium close-up of Draconia cropped at the waist, pouting with her arms folded, her mouth pursed and her eyes narrowed, a small impatient shift of her shoulders under the pinned robe, no stool and no furniture in frame."></figure>
+  <p class="end">End of page 2</p>
+
+  <p class="page-label" id="page-3"><span>Page 3 · The smuggled broom</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/11.jpg" alt="Close-up of Draconia&#x27;s face with a small sly smile, one eyebrow up, pleased with herself."></figure>
+  <figure><img src="img/12.jpg" alt="Medium close-up of Harry in the black pinned robe looking sideways at her with a flat, unimpressed face."></figure>
+  <figure><img src="img/13.jpg" alt="Medium close-up of Draconia leaning a little towards the other stool, one eyebrow raised, a probing look."></figure>
+  <figure><img src="img/14.jpg" alt="Medium close-up of Harry in a black pinned robe, a small honest shrug, looking back at her."></figure>
+  <figure><img src="img/15.jpg" alt="Close-up of Draconia, her eyes widening for a moment and darting away, her lips pressed into a tight line, trying to cover being thrown."></figure>
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · Quidditch and the Houses</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/16.jpg" alt="Over-the-shoulder shot past the back of Harry&#x27;s head at the bottom of the frame to Draconia on her stool, who has recovered her poise and lifts her chin, asking."></figure>
+  <figure><img src="img/17.jpg" alt="Medium close-up of Harry, his head slightly tilted, a puzzled look, wondering what on earth Quidditch could be."></figure>
+  <figure><img src="img/18.jpg" alt="Medium close-up of Draconia seen from slightly below, her chin lifted high and her eyes half closed, proud and glowing."></figure>
+  <figure><img src="img/19.jpg" alt="Medium two-shot from the shop floor of Draconia on her stool looking sideways towards Harry on the nearer stool, both in pinned black robes, Harry&#x27;s face turned towards her."></figure>
+  <figure><img src="img/20.jpg" alt="Medium close-up of Harry looking down at his own pinned robe, his shoulders a little hunched, feeling stupid."></figure>
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · A man at the window</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/21.jpg" alt="Medium close-up of Draconia, confident, one hand lifted a little inside the pinned robe&#x27;s sleeve, eyes bright."></figure>
+  <figure><img src="img/22.jpg" alt="Close-up of Draconia&#x27;s face wrinkling her nose in appalled delight, eyebrows high."></figure>
+  <figure><img src="img/23.jpg" alt="Medium close-up of Harry giving a polite, trapped half-smile, wishing he could say something more interesting."></figure>
+  <figure><img src="img/24.jpg" alt="Medium close-up of Draconia in profile, nodding her head towards the shop window, her face suddenly curious."></figure>
+  <figure><img src="img/25.jpg" alt="View from inside the shop straight through the big shop window, lace curtains drawn back at the sides, of Hagrid stooping at the glass and grinning, holding two large ice creams and pointing at them to show he cannot come in."></figure>
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · Servant, gamekeeper, savage</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/26.jpg" alt="Medium close-up of Harry in the pinned robe looking towards the window with a pleased grin."></figure>
+  <figure><img src="img/27.jpg" alt="Medium close-up of Draconia tilting her head, cool and mildly curious, a small smile."></figure>
+  <figure><img src="img/28.jpg" alt="Medium close-up of Harry with narrowed eyes, his mouth set, liking her less."></figure>
+  <figure><img src="img/29.jpg" alt="Medium close-up of Draconia leaning a little towards him, relishing the gossip, her eyes bright."></figure>
+  <figure><img src="img/30.jpg" alt="Medium close-up of Harry looking straight at her, his stare steady and cold."></figure>
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · Where are your parents?</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/31.jpg" alt="Close-up of Draconia, a sneer on her lips that wobbles at the corner, her eyes a little uncertain."></figure>
+  <figure><img src="img/32.jpg" alt="Medium close-up of Draconia with her head tilted, honestly curious, her eyes wide."></figure>
+  <figure><img src="img/33.jpg" alt="Medium close-up of Harry looking down at the hem of his robe, his voice short."></figure>
+  <figure><img src="img/34.jpg" alt="Medium close-up of Draconia turning her face away towards the mirror, her lips pressed, awkward."></figure>
+  <figure><img src="img/35.jpg" alt="Medium close-up of Draconia turning back to him, an anxious, earnest look, her brows drawn together."></figure>
+  <p class="end">End of page 7</p>
+
+  <p class="page-label" id="page-8"><span>Page 8 · The other sort</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/36.jpg" alt="Medium close-up of Harry looking her in the eye, his jaw set."></figure>
+  <figure><img src="img/37.jpg" alt="Medium close-up of Draconia, prim, her head high, reciting as if she had heard it at home."></figure>
+  <figure><img src="img/38.jpg" alt="Over-the-shoulder shot past the back of Harry&#x27;s head to Draconia leaning forward eagerly on her stool, mid-question."></figure>
+  <figure><img src="img/39.jpg" alt="Medium shot of Madam Malkin standing back from Harry&#x27;s footstool with a smile, the pins done, Harry in the pinned robe beside her."></figure>
+  <figure><img src="img/40.jpg" alt="Low medium shot of Harry hopping down from the footstool in his own clothes, glad of the excuse, turning towards the door."></figure>
+  <p class="end">End of page 8</p>
+
+  <p class="page-label" id="page-9"><span>Page 9 · Alone on the stool</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/41.jpg" alt="Medium shot from inside the shop of Harry from behind at the shop door, his hand on the handle, the little bell above the door, bright street light beyond."></figure>
+  <figure><img src="img/42.jpg" alt="Medium close-up of Draconia leaning out over her stool, half shouting after him, the assistant&#x27;s hand steadying her hem."></figure>
+  <figure><img src="img/43.jpg" alt="View from inside the shop through the glass of the shop door: Harry on the pavement taking an ice cream cone from Hagrid&#x27;s huge hand, his back to the shop, the door just swinging shut with the bell ringing."></figure>
+  <figure><img src="img/44.jpg" alt="Close-up of Draconia alone on her footstool, her lips pressed, her eyes on nothing, the other footstool empty and blurred behind her."></figure>
+  <figure><img src="img/45.jpg" alt="Medium shot of Draconia seen from behind and to one side on her footstool, her face reflected in the tall gilded mirror, trying to put her composed face back on."></figure>
+  <p class="end">End of page 9</p>
+
+  <p class="page-label" id="page-10"><span>Page 10 · Mother</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/46.jpg" alt="Medium close-up of Draconia on her stool, slouching badly with her arms folded, bored and restless, her head turning sharply as if she has just heard the little bell by the door (waist-up, no stool in frame)."></figure>
+  <figure><img src="img/47.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, Narcissa stepping in at the shop door from the bright street, the little bell above her, her gaze going straight across the room (a crop of the door shot, full height); right, Draconia with her back straight and her hands folded, composed."></figure>
+  <figure><img src="img/48.jpg" alt="Medium close-up of Narcissa standing before the stool looking down at her daughter, her head tilted a little, her eyes searching."></figure>
+  <figure><img src="img/49.jpg" alt="Close-up of Draconia, her chin up, her face composed but her eyes slipping aside."></figure>
+  <figure><img src="img/50.jpg" alt="Low wide shot of the street in front of the mauve-signed door of Madam Malkin&#x27;s, now empty, a small whirl of dust and a few leaves settling on the doorstep where two people stood; far down the street two tiny figures, a huge man and a small boy, walk away with ice creams."></figure>
+  <p class="end">End of page 10</p>
+</main>
+
+<nav class="chapter-nav" aria-label="Chapter navigation" data-chapter="ch06">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<section id="comments" class="comments" data-chapter="ch06" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
+
+<footer class="site-footer">
+  <p><a class="chat" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener">💬 Chat with her in your browser ↗</a></p>
+  <p><a href="../../">Malfoid: The Girl who Yearned</a> · <a href="https://rhedak.github.io/malfoid-gallery/">Malfoid Gallery</a> · <a href="https://rhedak.github.io/rhedak-bio/">About the author</a> · <a href="https://github.com/rhedak/malfoid-the-girl-who-yearned">Source on GitHub</a></p>
+  <p>A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.</p>
+</footer>
+
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<script src="../../comments.js" defer></script>
+<script>
+// Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
+(function () {
+  var navs = document.querySelectorAll('.chapter-nav');
+  if (!navs.length || !window.fetch) return;
+  fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    Array.prototype.forEach.call(navs, function (nav) {
+      var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+      if (i < 0) return;
+      function link(cls, ch, text) {
+        var old = nav.querySelector('.' + cls);
+        if (!ch || !old) return;
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = '../' + encodeURIComponent(ch.id) + '/';
+        a.title = ch.title;
+        a.innerHTML = text;
+        nav.replaceChild(a, old);
+      }
+      link('prev', list[i - 1], '&lsaquo; Prev');
+      link('next', list[i + 1], 'Next &rsaquo;');
+    });
+  }).catch(function () {});
+})();
+</script>
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
