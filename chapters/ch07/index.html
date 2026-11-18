@@ -1,0 +1,401 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Ollivander&#x27;s · Malfoid</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../icon-192.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="description" content="Ollivander&#x27;s: Malfoid, a free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:title" content="Ollivander&#x27;s · Malfoid">
+<meta property="og:description" content="A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch07/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of Malfoid: The Girl who Yearned">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ollivander&#x27;s · Malfoid">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<link rel="canonical" href="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch07/">
+
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "Show ▾"; color: var(--muted); }
+.toc details[open] summary::after { content: "Hide ▴"; }
+.toc details[open] summary { border-bottom: 0; }
+.toc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+  .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
+  .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
+  .chapter-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 720px; margin: 48px auto 0; padding: 14px 0 0; border-top: 1px solid var(--rule); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: 0.08em; }
+  .chapter-nav a, .chapter-nav .off { flex: 1 1 0; padding: 6px 4px; text-decoration: none; }
+  .chapter-nav a { color: var(--accent); }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chapter-nav .off { color: var(--muted); opacity: .5; }
+  .chapter-nav .prev { text-align: left; }
+  .chapter-nav .home { text-align: center; }
+  .chapter-nav.nav-top { margin: 0 auto; padding: 14px 0 0; border-top: 0; }
+  .chapter-nav .next { text-align: right; }
+  .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
+  .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .like { font: inherit; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .like[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+  .like:disabled { opacity: .6; cursor: wait; }
+  .like-count, .comment-meta, .comment-status, .comment-empty { color: var(--muted); font-size: .9rem; }
+  .comment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .comment-meta { margin: 0 0 4px; }
+  .comment-body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comments, .comments * { box-sizing: border-box; min-width: 0; }
+  .comment-form { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  .comment-form input, .comment-form textarea { max-width: 100%; }
+  .comment-form input, .comment-form textarea { font: inherit; width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+  .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
+  .comment-form button:disabled { opacity: .6; cursor: wait; }
+</style>
+
+<nav class="chapter-nav nav-top" aria-label="Chapter navigation" data-chapter="ch07">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 7</p>
+  <h1>Ollivander&#x27;s</h1>
+  <p class="meta">10 pages · 50 panels</p>
+  <p class="meta release">Version 1.0 · Published <time datetime="2026-11-18">18 November 2026</time> · Updated <time datetime="2026-11-18">18 November 2026</time></p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <details>
+    <summary>Contents</summary>
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">Home again</span><span class="r">01–05</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">Under the stare</span><span class="r">06–10</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">Not Slytherin</span><span class="r">11–15</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">Books, a cauldron and an owl</span><span class="r">16–20</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">The bell in the dark</span><span class="r">21–25</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">Your mother&#x27;s eyes</span><span class="r">26–30</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">The wand chooses</span><span class="r">31–35</span></a></li>
+      <li><a href="#page-8"><span class="n">Page 8</span><span class="t">Seven Galleons</span><span class="r">36–40</span></a></li>
+      <li><a href="#page-9"><span class="n">Page 9</span><span class="t">Paddington</span><span class="r">41–45</span></a></li>
+      <li><a href="#page-10"><span class="n">Page 10</span><span class="t">Number Four</span><span class="r">46–50</span></a></li>
+    </ol>
+    </details>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · Home again</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="Medium shot of Narcissa and Draconia standing close together on a quiet country lane between tall black wrought-iron gates that stand open, Narcissa&#x27;s gloveless hand resting on Draconia&#x27;s shoulder, Draconia&#x27;s eyes just opening, a little unsteady."></figure>
+  <figure><img src="img/02.jpg" alt="Wide shot looking down the long gravel drive towards the gates from a point on the drive, the black wrought-iron gates standing open at the far end, Narcissa and Draconia small in the middle distance walking towards the camera between two high clipped hedges."></figure>
+  <figure><img src="img/03.jpg" alt="Medium close-up of Draconia walking, her head slightly lowered, her gaze fixed on the gravel without seeing it, a small private frown."></figure>
+  <figure><img src="img/04.jpg" alt="Medium close-up of Narcissa walking, her face composed, her eyes sliding sideways towards her daughter who is just out of frame."></figure>
+  <figure><img src="img/05.jpg" alt="Medium shot of the top of the broad stone steps before the open front door of the manor, Dobby bowing low on the left with his big ears flattened, Pearl stretched out on the step on the right with her head raised, both turned to the camera."></figure>
+  <p class="end">End of page 1</p>
+
+  <p class="page-label" id="page-2"><span>Page 2 · Under the stare</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/06.jpg" alt="Close-up of Narcissa looking down, her head tilted a little, her eyes cold and unblinking, her mouth a thin line."></figure>
+  <figure><img src="img/07.jpg" alt="Medium shot of Dobby from the side, scurrying away fast through the open front door of the manor, one foot over the threshold, his big ears flat against his head, his patched pillowcase flapping behind him, the bright sunlit porch steps behind him and a dim stone entrance hall ahead of him."></figure>
+  <figure><img src="img/08.jpg" alt="Medium shot of Draconia crouching on the broad top step with one forearm held out, Pearl sliding up onto her arm, Draconia&#x27;s face softening into a small tired smile."></figure>
+  <figure><img src="img/09.jpg" alt="Medium shot of Harry walking beside Hagrid down a sunny Diagon Alley, Harry looking down at his large two-scoop ice cream, Hagrid beside him looking down at him with a worried frown, his own ice cream in one huge hand."></figure>
+  <figure><img src="img/10.jpg" alt="Close-up of Harry&#x27;s face looking up at the camera, a thin forced smile, his eyes not meeting the camera."></figure>
+  <p class="end">End of page 2</p>
+
+  <p class="page-label" id="page-3"><span>Page 3 · Not Slytherin</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/11.jpg" alt="Close-up of Harry speaking indignantly, his ice cream forgotten and dripping a little in his hand, his brows drawn together."></figure>
+  <figure><img src="img/12.jpg" alt="Medium close-up of Hagrid looking down kindly at Harry, a hand on Harry&#x27;s shoulder, his big bearded face warm."></figure>
+  <figure><img src="img/13.jpg" alt="Medium close-up of Harry looking up at Hagrid, curious now, the ice cream cone in his hand."></figure>
+  <figure><img src="img/14.jpg" alt="Close-up of Hagrid looking down, his eyebrows low over dark eyes, his expression grim, the sunlit street soft behind his bearded face."></figure>
+  <figure><img src="img/15.jpg" alt="Close-up of Harry, wide-eyed, his mouth a little open, his ice cream forgotten."></figure>
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · Books, a cauldron and an owl</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/16.jpg" alt="Close-up of Harry holding a huge heavy leather-bound book open against his chest, his eyes shining as he reads it, Hagrid&#x27;s big hand coming into the frame from the right to take hold of his collar."></figure>
+  <figure><img src="img/17.jpg" alt="Medium close-up of Hagrid bending down towards the camera, one huge finger raised in warning, his bearded face stern but kind."></figure>
+  <figure><img src="img/18.jpg" alt="Medium shot of Hagrid taking a gleaming gold cauldron out of Harry&#x27;s hands, Harry holding on to the rim with a hopeful look, Hagrid shaking his head."></figure>
+  <figure><img src="img/19.jpg" alt="Medium shot of Harry and Hagrid outside a shop, Hagrid checking a long parchment list and glancing down at Harry, Harry going pink and looking away, embarrassed."></figure>
+  <figure><img src="img/20.jpg" alt="Medium shot of Harry stepping out of a dark shop doorway into the sunlight, carrying a big domed cage with a sleeping snowy owl in it, Hagrid behind him ducking out of the door with his coat and umbrella, Harry looking up at Hagrid, flustered and happy."></figure>
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · The bell in the dark</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/21.jpg" alt="Close-up of a snowy owl asleep on the perch of a large cage, her head tucked under her wing, a little of Harry&#x27;s hand on the cage handle at the edge of the frame."></figure>
+  <figure><img src="img/22.jpg" alt="Medium shot of Draconia at the schoolroom desk writing with a quill, her back straight, the tutor standing very straight beside the desk and tapping the page with one gloved finger, Pearl coiled asleep on the rug by the desk."></figure>
+  <figure><img src="img/23.jpg" alt="Close-up of Draconia&#x27;s face turned to the window, her quill motionless above the page, her eyes far away."></figure>
+  <figure><img src="img/24.jpg" alt="Medium shot from inside a dim narrow shop of Harry stepping in through the door with Hagrid ducking in beside him, a tiny brass bell above the door, Harry rubbing the back of his neck with a puzzled look, Hagrid heading for a single spindly chair."></figure>
+  <figure><img src="img/25.jpg" alt="Close-up of Mr Ollivander&#x27;s long pale face seen from just in front of Harry, his huge silvery moon-like eyes wide open, a soft thin smile."></figure>
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · Your mother&#x27;s eyes</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/26.jpg" alt="Medium close-up in a wide frame: on the left side of the picture Ollivander leans in close to Harry, almost nose to nose, his silvery eyes fixed on Harry&#x27;s face, Harry leaning back a little, startled; both of them fill only the left 55 percent of the frame; the right 45 percent is empty calm space, only soft blurred narrow wand boxes in dim dusty light, with no people and no bright objects, room for a speech bubble."></figure>
+  <figure><img src="img/27.jpg" alt="Medium close-up in a wide frame: on the left side of the picture Ollivander straightens up and gestures with one long white hand, his expression thoughtful; he fills only the left 55 percent of the frame; the right 45 percent is empty calm space, only soft blurred narrow wand boxes in dim dusty light, with no people and no bright objects, room for a speech bubble."></figure>
+  <figure><img src="img/28.jpg" alt="Close-up in a wide frame: on the left side of the picture Harry&#x27;s forehead and eyes with one long white finger just touching his scar, Harry&#x27;s eyes wide and still behind his round glasses, the fringe pushed aside by the finger; this fills only the left 55 percent of the frame; the right 45 percent is empty calm space, only soft blurred dim dusty shop shadow, with no people and no bright objects, room for a speech bubble."></figure>
+  <figure><img src="img/29.jpg" alt="Medium shot of Ollivander on the right turning sharply towards Hagrid on the left, his eyes narrowed, Hagrid shuffling his feet and gripping his umbrella tightly in both hands."></figure>
+  <figure><img src="img/30.jpg" alt="Close-up of Harry&#x27;s face filling the frame, a small short silver-marked tape measure about as long as a hand floating on its own in the air just below his nose, lying level and horizontal under the nostrils, one end of the tape under each nostril, stretched across the width of the nose without touching or entering it, Harry cross-eyed, looking down at it, amazed; no arms and no hands in the picture."></figure>
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · The wand chooses</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/31.jpg" alt="Close-up of Harry&#x27;s right hand holding a plain slender wand out into the air, his face looking at it awkward and foolish, and a long white hand reaching in from the right to snatch it away."></figure>
+  <figure><img src="img/32.jpg" alt="Medium close-up of Ollivander holding a new narrow wand box out with a bright expectant look, one hand holding the box open to the camera, his eyes gleaming."></figure>
+  <figure><img src="img/33.jpg" alt="Medium shot of Harry on the left tentatively raising a wand, Ollivander on the right already snatching another one from his hand, a tall untidy pile of wands towering on the spindly chair between them, Hagrid standing by the door in the far background."></figure>
+  <figure><img src="img/34.jpg" alt="Medium close-up of Ollivander holding up a single wand box with a pleased knowing smile, his silvery eyes glittering."></figure>
+  <figure><img src="img/35.jpg" alt="Medium shot of Harry on the left holding a plain pale wand high above his head with a delighted gasp, a stream of red and gold sparks shooting from its tip and lighting the dusty shop walls, Hagrid on the right whooping with his hands raised."></figure>
+  <p class="end">End of page 7</p>
+
+  <p class="page-label" id="page-8"><span>Page 8 · Seven Galleons</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/36.jpg" alt="Medium close-up of Ollivander on the right wrapping a slender box in brown paper with quick long fingers, muttering to himself with his head tilted, Harry just visible on the left looking up at him."></figure>
+  <figure><img src="img/37.jpg" alt="Close-up of Ollivander fixing his pale silvery stare straight at the camera, his face very still, his mouth a thin line."></figure>
+  <figure><img src="img/38.jpg" alt="Close-up of Harry swallowing and shivering, his shoulders drawn up, his eyes wide behind his glasses."></figure>
+  <figure><img src="img/39.jpg" alt="Medium shot from inside the shop of Harry and Hagrid at the door, Harry holding a wand in a brown paper wrapping, Hagrid ducking out into bright afternoon sun, Ollivander on the left in the dusty shadow bowing slightly with one hand extended towards the door."></figure>
+  <figure><img src="img/40.jpg" alt="Medium shot of Draconia in the air on a small child&#x27;s racing broom, leaning forward low over the handle, her hair streaming behind her, her face open in a real smile, lawn and garden hedges far below her."></figure>
+  <p class="end">End of page 8</p>
+
+  <p class="page-label" id="page-9"><span>Page 9 · Paddington</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/41.jpg" alt="Low-angle shot looking up at Draconia on her small broom, a small dark figure against a warm golden late-afternoon sky with soft clouds, leaning into a turn, her hair streaming."></figure>
+  <figure><img src="img/42.jpg" alt="Medium shot of Harry on a plastic station seat holding half a hamburger, a large owl cage and brown paper parcels at his feet, looking down at his hands, Hagrid sitting beside him with his big head turned to him."></figure>
+  <figure><img src="img/43.jpg" alt="Close-up of Hagrid leaning across a small table, his eyes kind behind the wild beard and eyebrows, a gentle smile."></figure>
+  <figure><img src="img/44.jpg" alt="Medium shot of Hagrid on the left handing a white envelope down to Harry, who stands in the open door of a railway carriage with an owl cage at his feet, Hagrid&#x27;s other hand raised in a farewell."></figure>
+  <figure><img src="img/45.jpg" alt="Medium close-up of Harry seen in profile from inside the carriage, his nose pressed to the large window, looking back along an empty platform sliding past outside."></figure>
+  <p class="end">End of page 9</p>
+
+  <p class="page-label" id="page-10"><span>Page 10 · Number Four</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/46.jpg" alt="Wide shot of a long polished dining table in a high candle-lit room, Lucius at the head with a very straight back, Narcissa on his right, Draconia on his left sitting very straight, all three with their cutlery in their hands, a white tablecloth, tall windows dark behind them."></figure>
+  <figure><img src="img/47.jpg" alt="Medium shot of a flock of six brown owls flying in through a tall open window together, carrying between them one large brown-paper parcel tied with string, hanging from their feet, the candle-lit dining room behind them."></figure>
+  <figure><img src="img/48.jpg" alt="Medium close-up of Lucius at the head of the table, a thin approving smile, one hand lifting his glass, looking towards the camera."></figure>
+  <figure><img src="img/49.jpg" alt="Medium-wide shot from the pavement at dusk: Harry stands small and tired on the left of the picture at the gap in the low front garden wall of Number Four, looking up at the house, holding a large domed brass birdcage by its ring handle in one hand, the small side door of the cage shut and latched, Hedwig the white owl perched upright and asleep entirely inside the bars; on the pavement beside him stands one plain grey pewter cauldron about as tall as his knee, filled with three small brown-paper parcels tied with twine and the spine of one book sticking out; in front of him a short path, a plain front door and the square red-brick front of a two-storey house with one lit upstairs window, an old iron streetlamp glowing; nobody else in the picture."></figure>
+  <figure><img src="img/50.jpg" alt="Split panel, two 2:3 halves read left to right. Left: close-up of Harry lying on his back on a narrow bed in the second bedroom at night, the ticket held up in both hands in front of his face, looking at it. Right: close-up of the ticket card itself, flat and square-on, with the words Platform 9 3/4 printed on it in green ink."></figure>
+  <p class="end">End of page 10</p>
+</main>
+
+<nav class="chapter-nav" aria-label="Chapter navigation" data-chapter="ch07">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<section id="comments" class="comments" data-chapter="ch07" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
+
+<footer class="site-footer">
+  <p><a class="chat" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener">💬 Chat with her in your browser ↗</a></p>
+  <p><a href="../../">Malfoid: The Girl who Yearned</a> · <a href="https://rhedak.github.io/malfoid-gallery/">Malfoid Gallery</a> · <a href="https://rhedak.github.io/rhedak-bio/">About the author</a> · <a href="https://github.com/rhedak/malfoid-the-girl-who-yearned">Source on GitHub</a></p>
+  <p>A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.</p>
+</footer>
+
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<script>
+// The contents list starts collapsed; "↑ Contents" (and a #contents link) opens it.
+(function () {
+  var d = document.querySelector('.toc details');
+  if (!d) return;
+  function open() { if (location.hash === '#contents') d.open = true; }
+  window.addEventListener('hashchange', open); open();
+  Array.prototype.forEach.call(document.querySelectorAll('a.top'), function (a) { a.addEventListener('click', function () { d.open = true; }); });
+})();
+</script>
+<script src="../../comments.js" defer></script>
+<script>
+// Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
+(function () {
+  var navs = document.querySelectorAll('.chapter-nav');
+  if (!navs.length || !window.fetch) return;
+  fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    Array.prototype.forEach.call(navs, function (nav) {
+      var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+      if (i < 0) return;
+      function link(cls, ch, text) {
+        var old = nav.querySelector('.' + cls);
+        if (!ch || !old) return;
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = '../' + encodeURIComponent(ch.id) + '/';
+        a.title = ch.title;
+        a.innerHTML = text;
+        nav.replaceChild(a, old);
+      }
+      link('prev', list[i - 1], '&lsaquo; Prev');
+      link('next', list[i + 1], 'Next &rsaquo;');
+    });
+  }).catch(function () {});
+})();
+</script>
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
