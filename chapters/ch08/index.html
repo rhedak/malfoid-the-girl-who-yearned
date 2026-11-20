@@ -1,0 +1,401 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>The Last Month · Malfoid</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../icon-192.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="description" content="The Last Month: Malfoid, a free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:title" content="The Last Month · Malfoid">
+<meta property="og:description" content="A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch08/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of Malfoid: The Girl who Yearned">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Last Month · Malfoid">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<link rel="canonical" href="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch08/">
+
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "Show ▾"; color: var(--muted); }
+.toc details[open] summary::after { content: "Hide ▴"; }
+.toc details[open] summary { border-bottom: 0; }
+.toc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+  .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
+  .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
+  .chapter-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 720px; margin: 48px auto 0; padding: 14px 0 0; border-top: 1px solid var(--rule); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: 0.08em; }
+  .chapter-nav a, .chapter-nav .off { flex: 1 1 0; padding: 6px 4px; text-decoration: none; }
+  .chapter-nav a { color: var(--accent); }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chapter-nav .off { color: var(--muted); opacity: .5; }
+  .chapter-nav .prev { text-align: left; }
+  .chapter-nav .home { text-align: center; }
+  .chapter-nav.nav-top { margin: 0 auto; padding: 14px 0 0; border-top: 0; }
+  .chapter-nav .next { text-align: right; }
+  .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
+  .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .like { font: inherit; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .like[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+  .like:disabled { opacity: .6; cursor: wait; }
+  .like-count, .comment-meta, .comment-status, .comment-empty { color: var(--muted); font-size: .9rem; }
+  .comment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .comment-meta { margin: 0 0 4px; }
+  .comment-body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comments, .comments * { box-sizing: border-box; min-width: 0; }
+  .comment-form { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  .comment-form input, .comment-form textarea { max-width: 100%; }
+  .comment-form input, .comment-form textarea { font: inherit; width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+  .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
+  .comment-form button:disabled { opacity: .6; cursor: wait; }
+</style>
+
+<nav class="chapter-nav nav-top" aria-label="Chapter navigation" data-chapter="ch08">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 8</p>
+  <h1>The Last Month</h1>
+  <p class="meta">10 pages · 50 panels</p>
+  <p class="meta release">Version 1.0 · Published <time datetime="2026-11-20">20 November 2026</time> · Updated <time datetime="2026-11-20">20 November 2026</time></p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <details>
+    <summary>Contents</summary>
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">A month to go</span><span class="r">01–05</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">The Sorting Hat</span><span class="r">06–10</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">Nine ticks</span><span class="r">11–15</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">A pair of round glasses</span><span class="r">16–20</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">The lawn at dusk</span><span class="r">21–25</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">The supplies list</span><span class="r">26–30</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">Sixteen boxes</span><span class="r">31–35</span></a></li>
+      <li><a href="#page-8"><span class="n">Page 8</span><span class="t">Lumos</span><span class="r">36–40</span></a></li>
+      <li><a href="#page-9"><span class="n">Page 9</span><span class="t">Pansy&#x27;s owl</span><span class="r">41–45</span></a></li>
+      <li><a href="#page-10"><span class="n">Page 10</span><span class="t">Barking</span><span class="r">46–50</span></a></li>
+    </ol>
+    </details>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · A month to go</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="Medium shot of Pearl the white snake stretched out along a sunlit windowsill, her head lifted towards the window, the Manor lawn blurred behind the glass."></figure>
+  <figure><img src="img/02.jpg" alt="Medium shot of Draconia sitting on the edge of her bed in the morning, turned towards the bedside table beside her, looking at her slim pale wand lying on the table next to the lamp, her hands in her lap."></figure>
+  <figure><img src="img/03.jpg" alt="Medium shot from the kitchen doorway of a tidy breakfast table: Uncle Vernon behind a newspaper, Aunt Petunia at the cooker with her back half turned, and Harry standing small in the doorway in an oversized faded grey-green sweatshirt, neither adult looking at him."></figure>
+  <figure><img src="img/04.jpg" alt="Medium close-up across the breakfast table from Harry&#x27;s side: Harry sits in the foreground at the left in three-quarter view with a clean dry cereal bowl and spoon in front of him, while Aunt Petunia leans across the table and pours milk from a jug into the cereal bowl at the place opposite, her arm passing right over Harry&#x27;s bowl, her eyes on the jug and never on him."></figure>
+  <figure><img src="img/05.jpg" alt="Medium shot of a very large round boy in a red polo shirt bolting out of a kitchen door, one hand still holding a piece of toast, a chair tipped behind him, his face frightened, while a boy at the table looks after him."></figure>
+  <p class="end">End of page 1</p>
+
+  <p class="page-label" id="page-2"><span>Page 2 · The Sorting Hat</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/06.jpg" alt="Medium shot of the tutor in a plain grey dress and black shawl standing before the paper chart on the wall, one gloved hand holding a stick of charcoal, a simple charcoal drawing of a tall pointed hat on the chart behind her."></figure>
+  <figure><img src="img/07.jpg" alt="Close-up of a girl&#x27;s hand gripping a quill so tightly the knuckles show, her sleeve a deep bottle-green, a sheet of parchment under the quill."></figure>
+  <figure><img src="img/08.jpg" alt="Medium close-up of the tutor with a thin dry smile, one gloved finger raised, a faint glint of mischief in her eyes."></figure>
+  <figure><img src="img/09.jpg" alt="Medium close-up of Draconia at the writing table, her chin lifted and one eyebrow raised, her back very straight."></figure>
+  <figure><img src="img/10.jpg" alt="Medium close-up of the tutor looking down at her pupil with a thin approving smile, the charcoal hat on the paper chart blurred behind her."></figure>
+  <p class="end">End of page 2</p>
+
+  <p class="page-label" id="page-3"><span>Page 3 · Nine ticks</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/11.jpg" alt="Medium shot of Harry lying on his narrow bed late at night, propped on one elbow over a thick open school book, a bedside lamp the only light, the window open behind him."></figure>
+  <figure><img src="img/12.jpg" alt="Medium close-up of a snowy owl swooping in through an open window with a dead mouse in her beak, her wings spread wide, a surprised boy leaning back on his bed in the background."></figure>
+  <figure><img src="img/13.jpg" alt="Medium shot from inside a dim bedroom, Harry in the near left foreground peeking round the edge of the open bedroom door with half his face and one shoulder showing, looking out across the landing at Aunt Petunia walking past in the middle distance with an upright vacuum cleaner in her hand, her eyes front, not looking at his door."></figure>
+  <figure><img src="img/14.jpg" alt="Close-up of a boy&#x27;s hand drawing a blue biro tick in one box of a hand-drawn calendar sheet pinned to a bedroom wall, nine boxes already ticked, the rest of the boxes empty."></figure>
+  <figure><img src="img/15.jpg" alt="Close-up of a girl&#x27;s hand with a quill drawing in the margin of a page of notes, two small round circles joined by a short bridge, like a pair of round glasses, half drawn."></figure>
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · A pair of round glasses</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/16.jpg" alt="Close-up of a girl&#x27;s face, her mouth in a thin line and her eyes narrowed in annoyance, her quill pressing hard as it scribbles over something on the page below the frame."></figure>
+  <figure><img src="img/17.jpg" alt="Medium shot of the tutor tapping the paper chart with a pointer, three short charcoal columns on the chart behind her, the words on the board blurred to scribbles."></figure>
+  <figure><img src="img/18.jpg" alt="Medium close-up of Draconia at the writing table with her chin propped on one hand, her eyes drifting to the tall window beside her, a faint bored sigh."></figure>
+  <figure><img src="img/19.jpg" alt="Medium close-up of the tutor with her chin down and one gloved finger pointing, her voice clearly sharp."></figure>
+  <figure><img src="img/20.jpg" alt="View from a schoolroom window over the Manor lawn and a bright empty sky, a single swallow crossing the sky, the clipped hedges small below."></figure>
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · The lawn at dusk</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/21.jpg" alt="Medium shot of a girl in a dark green dress tiptoeing along a dim Manor corridor holding a small child&#x27;s broom against her chest, glancing back over her shoulder, a window at the end of the corridor glowing with the last of the dusk."></figure>
+  <figure><img src="img/22.jpg" alt="Close-up of a girl&#x27;s hand easing a heavy glass-paned terrace door open a crack, the lawn beyond in blue evening light, her other hand still gripping a small broom handle."></figure>
+  <figure><img src="img/23.jpg" alt="Low-angle medium shot of a girl lifting off the lawn on a small broom, leaning forward with her hair streaming behind her, the Manor&#x27;s lit windows small and blurred below."></figure>
+  <figure><img src="img/24.jpg" alt="Wide shot of a small girl on a small broom high above the vast dusk-lit grounds of the Manor, a warm sunset sky and long shadows below, her silhouette tiny and free."></figure>
+  <figure><img src="img/25.jpg" alt="Medium close-up of a breathless girl crouching on the dark lawn at the edge of the lit terrace, her broom across her knees, looking towards a lit window with a small guilty smile fading."></figure>
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · The supplies list</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/26.jpg" alt="Medium shot of the tutor seated at the schoolroom writing table with a printed supplies list in her gloved hands, her face stern and patient."></figure>
+  <figure><img src="img/27.jpg" alt="Close-up of Draconia, her eyes wide for a moment and then her jaw set in stubborn silence."></figure>
+  <figure><img src="img/28.jpg" alt="Medium close-up of the tutor with a thin level smile, a gloved finger lifted in a small correction."></figure>
+  <figure><img src="img/29.jpg" alt="Medium shot from the tutor&#x27;s position across the schoolroom: Draconia sits on a chair behind the writing table, facing the camera, very straight with her hands on the table, her face guarded and attentive, while behind her a tall man with a silver-headed cane stands in the open double doorway, his face cool and unreadable, his eyes resting on his daughter."></figure>
+  <figure><img src="img/30.jpg" alt="Medium shot of Harry sitting cross-legged on his narrow bed at night with a small brown-paper-wrapped parcel the length of his forearm in his lap, his hands resting on it without unwrapping it, Hedwig asleep on the bedpost."></figure>
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · Sixteen boxes</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/31.jpg" alt="Medium shot from a hallway into a living room lit by a blue television glow, Uncle Vernon, Aunt Petunia and a large boy on a sofa with their backs to the camera, none of them turning, a boy in an oversized blue sweatshirt passing the open door."></figure>
+  <figure><img src="img/32.jpg" alt="Close-up of a hand-drawn calendar sheet pinned to a bedroom wall, sixteen boxes ticked in blue biro, the next box still empty, a boy&#x27;s finger resting beside it."></figure>
+  <figure><img src="img/33.jpg" alt="Medium shot of the tutor holding a slim wand upright in a darkened schoolroom, its tip glowing with a bright soft white light, her face lit from below."></figure>
+  <figure><img src="img/34.jpg" alt="Close-up of Draconia pointing her wand with a fierce frown of concentration, the wand tip dark, her cheeks flushed with effort."></figure>
+  <figure><img src="img/35.jpg" alt="Medium close-up of Draconia staring at the tip of her wand which glows with a small steady light, a startled delighted smile, a white snake lifting her head from the rug beside her."></figure>
+  <p class="end">End of page 7</p>
+
+  <p class="page-label" id="page-8"><span>Page 8 · Lumos</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/36.jpg" alt="Close-up of a white feather rising in the air a hand&#x27;s breadth above a writing table, a slim wand held steady beneath it, the girl&#x27;s eyes fixed on it."></figure>
+  <figure><img src="img/37.jpg" alt="Medium close-up of the tutor with a raised gloved hand and a stern warning look."></figure>
+  <figure><img src="img/38.jpg" alt="Close-up of Draconia lowering her wand and giving a small obedient nod, her eyes still bright."></figure>
+  <figure><img src="img/39.jpg" alt="Medium shot of the tutor in front of the paper chart with one finger lifted, a charcoal list of House names behind her blurred to scribbles."></figure>
+  <figure><img src="img/40.jpg" alt="Close-up of Draconia going very still, her back straight and her eyes sharp and attentive, her quill lifted and held in the air."></figure>
+  <p class="end">End of page 8</p>
+
+  <p class="page-label" id="page-9"><span>Page 9 · Pansy&#x27;s owl</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/41.jpg" alt="Medium shot of a brown owl on a bedroom windowsill holding out a small rolled letter in its beak, a girl in a green dress reaching up to take it, the evening sky behind."></figure>
+  <figure><img src="img/42.jpg" alt="Close-up of Draconia reading a letter with a slow sly smile, one eyebrow raised, the parchment held in both hands."></figure>
+  <figure><img src="img/43.jpg" alt="Close-up of a quill hovering over a half-written letter, a single blot of ink spreading where the pen has stopped, a girl&#x27;s hand frozen mid-sentence."></figure>
+  <figure><img src="img/44.jpg" alt="Medium shot of a tall woman in dark navy robes folding a green dress into an open leather trunk at the foot of a bed while a small house-elf in a torn pillowcase hands her a pair of shoes."></figure>
+  <figure><img src="img/45.jpg" alt="Medium shot of Harry kneeling beside an old battered trunk on his bedroom floor, putting a thick book in on top of a folded sweatshirt, a pewter cauldron and a bundle of parcels beside him, a white owl on the bedpost."></figure>
+  <p class="end">End of page 9</p>
+
+  <p class="page-label" id="page-10"><span>Page 10 · Barking</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/46.jpg" alt="Medium shot of a tall man with long pale hair and a woman with pale hair side by side in an elegant lamp-lit drawing room, the man speaking calmly with a hand lifted, the woman listening with a cool composed look."></figure>
+  <figure><img src="img/47.jpg" alt="Medium shot of a girl on a dim staircase landing with her hands folded and a white snake draped round her shoulders, her face composed but her eyes bright, a packed leather trunk waiting by the foot of the stairs below."></figure>
+  <figure><img src="img/48.jpg" alt="Medium shot from a living-room doorway into a room lit by a blue television glow, a very large round boy screaming and running past the camera while a small boy in the doorway clears his throat, a man in an armchair not turning from a quiz show."></figure>
+  <figure><img src="img/49.jpg" alt="Close-up of a boy&#x27;s hands holding a long cream ticket card up flat to the camera, a lit television screen softly blurred behind it."></figure>
+  <figure><img src="img/50.jpg" alt="Medium close-up of Uncle Vernon in an armchair with his thick neck and a bristling moustache, his small eyes narrowed and his face a stubborn scowl, the blue glow of a television on his cheek."></figure>
+  <p class="end">End of page 10</p>
+</main>
+
+<nav class="chapter-nav" aria-label="Chapter navigation" data-chapter="ch08">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<section id="comments" class="comments" data-chapter="ch08" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
+
+<footer class="site-footer">
+  <p><a class="chat" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener">💬 Chat with her in your browser ↗</a></p>
+  <p><a href="../../">Malfoid: The Girl who Yearned</a> · <a href="https://rhedak.github.io/malfoid-gallery/">Malfoid Gallery</a> · <a href="https://rhedak.github.io/rhedak-bio/">About the author</a> · <a href="https://github.com/rhedak/malfoid-the-girl-who-yearned">Source on GitHub</a></p>
+  <p>A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.</p>
+</footer>
+
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<script>
+// The contents list starts collapsed; "↑ Contents" (and a #contents link) opens it.
+(function () {
+  var d = document.querySelector('.toc details');
+  if (!d) return;
+  function open() { if (location.hash === '#contents') d.open = true; }
+  window.addEventListener('hashchange', open); open();
+  Array.prototype.forEach.call(document.querySelectorAll('a.top'), function (a) { a.addEventListener('click', function () { d.open = true; }); });
+})();
+</script>
+<script src="../../comments.js" defer></script>
+<script>
+// Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
+(function () {
+  var navs = document.querySelectorAll('.chapter-nav');
+  if (!navs.length || !window.fetch) return;
+  fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    Array.prototype.forEach.call(navs, function (nav) {
+      var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+      if (i < 0) return;
+      function link(cls, ch, text) {
+        var old = nav.querySelector('.' + cls);
+        if (!ch || !old) return;
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = '../' + encodeURIComponent(ch.id) + '/';
+        a.title = ch.title;
+        a.innerHTML = text;
+        nav.replaceChild(a, old);
+      }
+      link('prev', list[i - 1], '&lsaquo; Prev');
+      link('next', list[i + 1], 'Next &rsaquo;');
+    });
+  }).catch(function () {});
+})();
+</script>
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
