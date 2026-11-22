@@ -1,0 +1,407 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Platform Nine and Three-Quarters · Malfoid</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../icon-192.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="description" content="Platform Nine and Three-Quarters: Malfoid, a free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:title" content="Platform Nine and Three-Quarters · Malfoid">
+<meta property="og:description" content="A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch09/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of Malfoid: The Girl who Yearned">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Platform Nine and Three-Quarters · Malfoid">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<link rel="canonical" href="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch09/">
+
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "Show ▾"; color: var(--muted); }
+.toc details[open] summary::after { content: "Hide ▴"; }
+.toc details[open] summary { border-bottom: 0; }
+.toc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+  .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
+  .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
+  .chapter-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 720px; margin: 48px auto 0; padding: 14px 0 0; border-top: 1px solid var(--rule); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: 0.08em; }
+  .chapter-nav a, .chapter-nav .off { flex: 1 1 0; padding: 6px 4px; text-decoration: none; }
+  .chapter-nav a { color: var(--accent); }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chapter-nav .off { color: var(--muted); opacity: .5; }
+  .chapter-nav .prev { text-align: left; }
+  .chapter-nav .home { text-align: center; }
+  .chapter-nav.nav-top { margin: 0 auto; padding: 14px 0 0; border-top: 0; }
+  .chapter-nav .next { text-align: right; }
+  .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
+  .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .like { font: inherit; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .like[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+  .like:disabled { opacity: .6; cursor: wait; }
+  .like-count, .comment-meta, .comment-status, .comment-empty { color: var(--muted); font-size: .9rem; }
+  .comment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .comment-meta { margin: 0 0 4px; }
+  .comment-body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comments, .comments * { box-sizing: border-box; min-width: 0; }
+  .comment-form { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  .comment-form input, .comment-form textarea { max-width: 100%; }
+  .comment-form input, .comment-form textarea { font: inherit; width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+  .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
+  .comment-form button:disabled { opacity: .6; cursor: wait; }
+</style>
+
+<nav class="chapter-nav nav-top" aria-label="Chapter navigation" data-chapter="ch09">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 9</p>
+  <h1>Platform Nine and Three-Quarters</h1>
+  <p class="meta">11 pages · 52 panels</p>
+  <p class="meta release">Version 1.0 · Published <time datetime="2026-11-22">22 November 2026</time> · Updated <time datetime="2026-11-22">22 November 2026</time></p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <details>
+    <summary>Contents</summary>
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">Platform nine</span><span class="r">01–05</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">Ten forty-five</span><span class="r">06–10</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">Ten minutes left</span><span class="r">11–15</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">Through the wall</span><span class="r">16–20</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">Your compartment</span><span class="r">21–25</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">The scarlet train</span><span class="r">26–30</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">Harry Potter!</span><span class="r">31–35</span></a></li>
+      <li><a href="#page-8"><span class="n">Page 8</span><span class="t">Percy and the twins</span><span class="r">36–40</span></a></li>
+      <li><a href="#page-9"><span class="n">Page 9</span><span class="t">Eleven o&#x27;clock</span><span class="r">41–45</span></a></li>
+      <li><a href="#page-10"><span class="n">Page 10</span><span class="t">Make room</span><span class="r">46–49</span></a></li>
+      <li><a href="#page-11"><span class="n">Page 11</span><span class="t">Anyone sitting there?</span><span class="r">50–52</span></a></li>
+    </ol>
+    </details>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · Platform nine</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="Medium shot from the front of a boy in an oversized faded grey-green sweatshirt walking quickly beside a large heavy man with almost no neck who pushes a luggage trolley carrying one big old battered trunk with a white owl in a cage on top, the man looking strangely pleased with himself."></figure>
+  <figure><img src="img/02.jpg" alt="Wide shot from behind a heavy man and a small boy with a luggage trolley, who have stopped in the middle of a station concourse and face two platform entrances, a big plastic number nine over the left one and a big plastic number ten over the right one with a plain blank brick wall and nothing else between them, the man&#x27;s thick neck and one raised hand pointing at the gap."></figure>
+  <figure><img src="img/03.jpg" alt="Close-up of a large heavy man with a bristling moustache and a thick neck giving an even nastier smile straight at the camera, his small eyes bright with spite."></figure>
+  <figure><img src="img/04.jpg" alt="Medium shot through the windscreen of a silver family car at three people laughing: a heavy man with a moustache at the wheel, a thin woman with a long neck in the front passenger seat with a hand over her mouth, and a fat blond boy in the middle of the rear seat laughing with his head back."></figure>
+  <figure><img src="img/05.jpg" alt="Medium two-shot of a small boy in an oversized grey-green sweatshirt asking a uniformed station guard in a peaked cap, the boy holding the handle of a trolley with an owl cage on it, the guard leaning back with a frown and an impatient hand lifted."></figure>
+  <p class="end">End of page 1</p>
+
+  <p class="page-label" id="page-2"><span>Page 2 · Ten forty-five</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/06.jpg" alt="Close-up of a small boy with messy black hair and round glasses looking worried at a small empty ticket inspector&#x27;s stand beside him, his lips pressed together, his hand halfway to his pocket."></figure>
+  <figure><img src="img/07.jpg" alt="Wide low shot of three people standing very upright on a busy station platform: a tall man with long pale hair in a black travelling cloak with a cane at the left, a tall pale-haired woman in dark robes in the middle and a girl in plain black robes at the right, a leather trunk at their feet, a scarlet steam engine and carriages behind them in the steam."></figure>
+  <figure><img src="img/08.jpg" alt="Medium shot of a girl with a short dark bob and a wide smirk in black robes running across the platform with her arms out towards a pale-haired girl in plain black robes who stands very straight, her lips trying not to smile, a girl with long chestnut hair tied with a ribbon following a few steps behind."></figure>
+  <figure><img src="img/09.jpg" alt="Medium shot of three adult women greeting each other on a station platform: a tall pale-haired woman in dark travelling robes at the right, a slim woman with a short dark bob and a feathered hat in a rose-pink cloak in the middle, a tall woman with long wavy chestnut hair in a lilac cloak at the left, all with polite thin smiles."></figure>
+  <figure><img src="img/10.jpg" alt="Medium shot of three men on a station platform: a tall man with long pale hair in a black cloak with a snake-headed cane in the middle giving a slight stiff nod, a stocky man with thinning dark hair and a snub nose at the left holding his hat, and a lean man with greying chestnut hair at the right, head held level, giving a friendly, composed greeting with a warm half-smile."></figure>
+  <p class="end">End of page 2</p>
+
+  <p class="page-label" id="page-3"><span>Page 3 · Ten minutes left</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/11.jpg" alt="Medium shot of a pale-haired girl in plain black robes making a small perfect curtsey with a straight back to someone out of frame, a girl with a short dark bob rolling her eyes beside her and a girl with a chestnut ribbon smiling warmly on the other side."></figure>
+  <figure><img src="img/12.jpg" alt="Medium shot of a small boy with messy black hair and round glasses standing under a big station clock and an arrivals board, looking up at the clock with a worried face, the clock hands at ten minutes to eleven."></figure>
+  <figure><img src="img/13.jpg" alt="Close-up of a small boy with messy black hair and round glasses swinging round with wide eyes, over his shoulder a plump red-haired woman and several red-haired children walking past, soft and out of focus."></figure>
+  <figure><img src="img/14.jpg" alt="Medium shot of a plump red-haired woman holding the hand of a small red-haired girl near a plain brick wall, a tall boy with red hair and horn-rimmed glasses and black robes marching away from them towards the wall in the background."></figure>
+  <figure><img src="img/15.jpg" alt="Medium shot of a plump red-haired woman and two identical red-haired boys, the boy on the left grinning cheekily and speaking, the woman at the right looking weary, a plain brick wall behind them and a crowd of tourists with big backpacks swarming past in the blurred background."></figure>
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · Through the wall</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/16.jpg" alt="Low shot from behind of a red-haired teenage boy pushing a trolley with a trunk and an owl cage at a running pace into a plain brick wall, the front half of the trolley already sunk into the bricks."></figure>
+  <figure><img src="img/17.jpg" alt="Medium close-up of a pale-haired girl in plain black robes at the left looking intently across the platform with a hint of longing, in the far background a red-haired boy bursting through a wrought-iron archway with a rattling trolley and a bit of grey dust in the air."></figure>
+  <figure><img src="img/18.jpg" alt="Medium shot of a small boy with messy black hair and round glasses pushing a trolley up to a plump red-haired woman who smiles kindly, behind her a tall gangling red-haired boy with freckles and a long nose standing beside a trunk."></figure>
+  <figure><img src="img/19.jpg" alt="Close-up of a plump red-haired woman with a kind motherly face leaning forward and speaking earnestly, one finger lifted."></figure>
+  <figure><img src="img/20.jpg" alt="Side-on medium shot of a small boy with messy black hair and round glasses leaning forward over a trolley with a trunk and owl cage and running with his eyes squeezed shut and his mouth open towards a plain brick wall."></figure>
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · Your compartment</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/21.jpg" alt="Wide shot over a small boy&#x27;s shoulder at a crowded platform in steam, a scarlet steam engine and a long row of scarlet carriages waiting beside it and people hanging out of the carriage windows, the boy standing small at the left with his mouth open and a trolley."></figure>
+  <figure><img src="img/22.jpg" alt="Medium shot in profile of a tall man with long pale hair in a black cloak holding a snake-headed cane, looking down at a pale-haired girl in plain black robes who stands very straight looking up at him, the platform steam soft behind them."></figure>
+  <figure><img src="img/23.jpg" alt="Medium two-shot in profile, same framing as panel 22: a tall man with long pale hair on the LEFT of the picture facing right, looking calmly down at a pale-haired girl in plain black robes on the RIGHT facing left, speaking up at him with an annoyed set to her jaw; her hair has exactly two thin braids, one in front of each shoulder."></figure>
+  <figure><img src="img/24.jpg" alt="Close-up of a tall man with long pale hair and a cold level expression glancing sideways along a crowded platform with one eyebrow slightly raised."></figure>
+  <figure><img src="img/25.jpg" alt="Medium shot of a pale-haired girl in plain black robes and a girl with a short dark bob linking arms and grinning, a girl with a chestnut ribbon skipping along behind them, the scarlet carriages behind them."></figure>
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · The scarlet train</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/26.jpg" alt="Close-up of a pale-haired girl in plain black robes glancing at the scarlet train, her face still composed but one corner of her mouth lifting into a small relieved smile."></figure>
+  <figure><img src="img/27.jpg" alt="Medium shot of a round-faced anxious boy with short brown hair and a tall stern elderly woman in a long dark green coat and a hat, the boy looking tearful and the woman sighing."></figure>
+  <figure><img src="img/28.jpg" alt="Medium shot of a grinning boy with long dreadlocks lifting the lid of a box in his arms while a small crowd of children around him shriek and pull back, something inside poking out a long hairy leg."></figure>
+  <figure><img src="img/29.jpg" alt="Medium shot of a small boy with messy black hair and round glasses struggling to heave one end of a huge trunk up the steps of a scarlet carriage while a red-haired boy in a patched jumper at the right offers a hand with a grin."></figure>
+  <figure><img src="img/30.jpg" alt="Medium shot inside a small railway compartment of two identical red-haired boys in patched jumpers standing by the sliding door and a small boy with messy black hair and round glasses holding his sweaty hair out of his eyes, one twin pointing at the boy&#x27;s forehead."></figure>
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · Harry Potter!</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/31.jpg" alt="Medium close-up of two identical red-haired boys gawking at a small boy with messy black hair and round glasses who looks embarrassed, a lightning scar on his forehead."></figure>
+  <figure><img src="img/32.jpg" alt="Medium shot of a tall pale-haired woman in dark travelling robes bending to straighten the collar of a girl in plain black robes at the foot of a carriage step, neither of them smiling, the girl standing stiff."></figure>
+  <figure><img src="img/33.jpg" alt="Medium shot of a girl in plain black robes standing on the step of a scarlet railway carriage with one hand on the rail and looking back over her shoulder at the camera with a composed face."></figure>
+  <figure><img src="img/34.jpg" alt="View from inside a carriage through an open window onto the platform of a plump red-haired woman rubbing the nose of a tall red-haired boy who tries to jerk away, a twin behind him mocking with his hands cupped round his mouth."></figure>
+  <figure><img src="img/35.jpg" alt="Medium shot through a carriage window of a plump red-haired woman asking a question while a tall red-haired boy in billowing black robes with a red and gold badge on his chest strides into the scene, a younger red-haired boy beside her."></figure>
+  <p class="end">End of page 7</p>
+
+  <p class="page-label" id="page-8"><span>Page 8 · Percy and the twins</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/36.jpg" alt="Medium shot of a plump red-haired woman kissing a tall boy in black robes with a prefect&#x27;s badge on the cheek while he stands stiff and annoyed, two identical red-haired boys grinning at him beside them."></figure>
+  <figure><img src="img/37.jpg" alt="Medium close-up of a pale-haired girl in plain black robes at a carriage window with her cheek near the glass, looking out across the platform to her right with a still, composed face and a flicker of something under it."></figure>
+  <figure><img src="img/38.jpg" alt="Medium shot of a plump red-haired woman wagging a finger at two identical red-haired boys who look innocent and mock-offended."></figure>
+  <figure><img src="img/39.jpg" alt="Medium shot from inside a carriage compartment, the edge of a small boy with messy black hair leaning back from the window to hide, and through the glass a plump red-haired woman and a tall red-haired boy speaking excitedly."></figure>
+  <figure><img src="img/40.jpg" alt="Medium shot of a small red-haired girl with her hands clasped begging up at a plump red-haired woman who looks down at her, a red-haired twin leaning out of the carriage window above them answering."></figure>
+  <p class="end">End of page 8</p>
+
+  <p class="page-label" id="page-9"><span>Page 9 · Eleven o&#x27;clock</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/41.jpg" alt="Medium shot of a plump red-haired woman looking up sternly at two identical red-haired boys leaning out of a carriage window, one of them grinning, the other holding up his hands in mock surrender."></figure>
+  <figure><img src="img/42.jpg" alt="Medium shot of two identical red-haired boys leaning out of a carriage window waving, a plump red-haired woman at the left below them with a handkerchief and a small red-haired girl at her side beginning to cry."></figure>
+  <figure><img src="img/43.jpg" alt="Medium shot from straight behind a tall man with long pale hair and a tall pale-haired woman standing side by side very still on a platform, their backs to the camera and their arms at their sides, the carriage side flat-on behind them with a large lowered window in which a small girl in plain black robes sits back, as the train begins to move."></figure>
+  <figure><img src="img/44.jpg" alt="Close-up of a tall pale-haired woman&#x27;s face and one gloveless hand beginning to lift, her expression unreadable, a few steps of train in motion blurred behind her."></figure>
+  <figure><img src="img/45.jpg" alt="Medium shot from ahead of a moving carriage of a small red-haired girl running along a platform beside a moving train, half laughing and half crying, her arm out waving."></figure>
+  <p class="end">End of page 9</p>
+
+  <p class="page-label" id="page-10"><span>Page 10 · Make room</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/46.jpg" alt="Medium close-up of a small boy with messy black hair and round glasses at a carriage window, his face lit with excitement, the windowpane behind him showing houses and gardens streaming past."></figure>
+  <figure><img src="img/47.jpg" alt="Medium shot from the window side of a small railway compartment of a pale-haired girl in plain black robes sliding the door open and stopping in the doorway, two thickset boys in black robes sprawled across the two facing bench seats with their feet up."></figure>
+  <figure><img src="img/48.jpg" alt="Medium shot of two thickset boys in black robes scrambling to sit up and shuffle along the facing seats to make room, one with an open picnic hamper on his knees, both looking sheepish."></figure>
+  <figure><img src="img/49.jpg" alt="Medium shot from inside a compartment of a pale-haired girl in plain black robes standing in the sliding door with a flat annoyed look, a girl with a short dark bob and a girl with a chestnut ribbon behind her shoulders."></figure>
+  <p class="end">End of page 10</p>
+
+  <p class="page-label" id="page-11"><span>Page 11 · Anyone sitting there?</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/50.jpg" alt="Close-up two-shot of two thickset boys side by side in black robes looking up earnestly, the boy on the left speaking and the boy on the right nodding."></figure>
+  <figure><img src="img/51.jpg" alt="Medium shot from the window side of a small railway compartment of a small boy with messy black hair and round glasses seated by the window and a tall gangling red-haired boy with freckles and a long nose standing in the open sliding door, pointing at the seat opposite."></figure>
+  <figure><img src="img/52.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, a close-up of a pale-haired girl in plain black robes seated by a compartment window with a composed, faintly expectant face; right, a close-up of a small boy with messy black hair and round glasses seated by his own compartment window, glancing across at someone sitting down opposite him."></figure>
+  <p class="end">End of page 11</p>
+</main>
+
+<nav class="chapter-nav" aria-label="Chapter navigation" data-chapter="ch09">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<section id="comments" class="comments" data-chapter="ch09" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
+
+<footer class="site-footer">
+  <p><a class="chat" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener">💬 Chat with her in your browser ↗</a></p>
+  <p><a href="../../">Malfoid: The Girl who Yearned</a> · <a href="https://rhedak.github.io/malfoid-gallery/">Malfoid Gallery</a> · <a href="https://rhedak.github.io/rhedak-bio/">About the author</a> · <a href="https://github.com/rhedak/malfoid-the-girl-who-yearned">Source on GitHub</a></p>
+  <p>A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.</p>
+</footer>
+
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<script>
+// The contents list starts collapsed; "↑ Contents" (and a #contents link) opens it.
+(function () {
+  var d = document.querySelector('.toc details');
+  if (!d) return;
+  function open() { if (location.hash === '#contents') d.open = true; }
+  window.addEventListener('hashchange', open); open();
+  Array.prototype.forEach.call(document.querySelectorAll('a.top'), function (a) { a.addEventListener('click', function () { d.open = true; }); });
+})();
+</script>
+<script src="../../comments.js" defer></script>
+<script>
+// Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
+(function () {
+  var navs = document.querySelectorAll('.chapter-nav');
+  if (!navs.length || !window.fetch) return;
+  fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    Array.prototype.forEach.call(navs, function (nav) {
+      var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+      if (i < 0) return;
+      function link(cls, ch, text) {
+        var old = nav.querySelector('.' + cls);
+        if (!ch || !old) return;
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = '../' + encodeURIComponent(ch.id) + '/';
+        a.title = ch.title;
+        a.innerHTML = text;
+        nav.replaceChild(a, old);
+      }
+      link('prev', list[i - 1], '&lsaquo; Prev');
+      link('next', list[i + 1], 'Next &rsaquo;');
+    });
+  }).catch(function () {});
+})();
+</script>
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
