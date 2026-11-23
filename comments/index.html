@@ -1,0 +1,129 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Comments · Malfoid</title>
+<link rel="icon" href="../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../icon-192.png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+
+<style>
+/* Owner's overview of every chapter's comments, newest first. Not linked from the landing page. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding: 24px max(16px, env(safe-area-inset-right, 0px)) 48px max(16px, env(safe-area-inset-left, 0px));
+}
+main { max-width: 720px; margin: 0 auto; }
+h1 { font-size: 1.6rem; color: var(--accent); margin: 0 0 4px; }
+.lede, .status, .meta, .empty { color: var(--muted); font-size: .9rem; }
+.lede { margin: 0 0 24px; }
+ol { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; overflow-wrap: anywhere; }
+.meta { margin: 0 0 4px; }
+.where { margin: 0 0 6px; font-weight: bold; }
+.body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+.comment, .comment * { min-width: 0; box-sizing: border-box; }
+</style>
+
+<main>
+  <h1>Comments</h1>
+  <p class="lede">Every comment on every chapter, newest first. Each one links to the chapter it was made on.</p>
+  <p class="status" id="status" aria-live="polite">Loading…</p>
+  <ol id="list"></ol>
+</main>
+
+<script>
+(function () {
+  var API = "https://malfoid-comments.rhedak.workers.dev";
+  var list = document.getElementById("list");
+  var status = document.getElementById("status");
+
+  function el(tag, attrs, text) {
+    var node = document.createElement(tag);
+    Object.keys(attrs || {}).forEach(function (k) { node.setAttribute(k, attrs[k]); });
+    if (text != null) node.textContent = text;
+    return node;
+  }
+  function when(seconds) {
+    return new Date(seconds * 1000).toLocaleString("en-GB", { day: "numeric", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit" });
+  }
+  function getJSON(url) {
+    return fetch(url).then(function (res) {
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      return res.json();
+    });
+  }
+
+  // Chapter list comes from the same file the landing page reads.
+  getJSON("../chapters/index.json").then(function (chapters) {
+    return Promise.all(chapters.map(function (ch) {
+      return getJSON(API + "/api/chapters/" + ch.id + "/comments")
+        .then(function (data) {
+          return (data.comments || []).map(function (c) {
+            return { chapter: ch, comment: c };
+          });
+        })
+        .catch(function () {
+          return null; // a chapter that fails to load is reported below
+        });
+    }));
+  }).then(function (groups) {
+    var failed = groups.filter(function (g) { return g === null; }).length;
+    var all = [];
+    groups.forEach(function (g) { if (g) all = all.concat(g); });
+    all.sort(function (a, b) { return b.comment.created_at - a.comment.created_at; });
+
+    if (!all.length) {
+      status.textContent = failed ? "Could not load comments." : "No comments yet.";
+      return;
+    }
+    status.textContent = all.length + (all.length === 1 ? " comment" : " comments") +
+      (failed ? " (" + failed + " chapter" + (failed === 1 ? "" : "s") + " could not be loaded)" : "");
+
+    all.forEach(function (entry) {
+      var c = entry.comment, ch = entry.chapter;
+      var item = el("li", { class: "comment" });
+      var where = el("p", { class: "where" });
+      where.append(el("a", { href: "../chapters/" + ch.id + "/#comments" }, ch.id + " · " + ch.title));
+      item.append(where);
+      item.append(el("p", { class: "meta" }, c.name + " · " + when(c.created_at)));
+      item.append(el("p", { class: "body" }, c.body));
+      list.append(item);
+    });
+  }).catch(function () {
+    status.textContent = "Could not load the chapter list.";
+  });
+})();
+</script>
