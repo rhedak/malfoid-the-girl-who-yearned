@@ -1,0 +1,410 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>The Compartments · Malfoid</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../icon-192.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="description" content="The Compartments: Malfoid, a free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:title" content="The Compartments · Malfoid">
+<meta property="og:description" content="A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch10/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of Malfoid: The Girl who Yearned">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Compartments · Malfoid">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<link rel="canonical" href="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch10/">
+
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "Show ▾"; color: var(--muted); }
+.toc details[open] summary::after { content: "Hide ▴"; }
+.toc details[open] summary { border-bottom: 0; }
+.toc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+  .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
+  .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
+  .chapter-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 720px; margin: 48px auto 0; padding: 14px 0 0; border-top: 1px solid var(--rule); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: 0.08em; }
+  .chapter-nav a, .chapter-nav .off { flex: 1 1 0; padding: 6px 4px; text-decoration: none; }
+  .chapter-nav a { color: var(--accent); }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chapter-nav .off { color: var(--muted); opacity: .5; }
+  .chapter-nav .prev { text-align: left; }
+  .chapter-nav .home { text-align: center; }
+  .chapter-nav.nav-top { margin: 0 auto; padding: 14px 0 0; border-top: 0; }
+  .chapter-nav .next { text-align: right; }
+  .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
+  .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .like { font: inherit; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .like[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+  .like:disabled { opacity: .6; cursor: wait; }
+  .like-count, .comment-meta, .comment-status, .comment-empty { color: var(--muted); font-size: .9rem; }
+  .comment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .comment-meta { margin: 0 0 4px; }
+  .comment-body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comments, .comments * { box-sizing: border-box; min-width: 0; }
+  .comment-form { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  .comment-form input, .comment-form textarea { max-width: 100%; }
+  .comment-form input, .comment-form textarea { font: inherit; width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+  .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
+  .comment-form button:disabled { opacity: .6; cursor: wait; }
+</style>
+
+<nav class="chapter-nav nav-top" aria-label="Chapter navigation" data-chapter="ch10">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 10</p>
+  <h1>The Compartments</h1>
+  <p class="meta">11 pages · 55 panels</p>
+  <p class="meta release">Version 1.0 · Published <time datetime="2026-11-24">24 November 2026</time> · Updated <time datetime="2026-11-24">24 November 2026</time></p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <details>
+    <summary>Contents</summary>
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">The Slytherin compartment</span><span class="r">01–05</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">Are you really Harry Potter?</span><span class="r">06–10</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">Brothers and a rat</span><span class="r">11–15</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">A small flame</span><span class="r">16–20</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">The trolley witch</span><span class="r">21–25</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">Chocolate Frogs</span><span class="r">26–30</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">Has anyone seen a toad?</span><span class="r">31–35</span></a></li>
+      <li><a href="#page-8"><span class="n">Page 8</span><span class="t">Sunshine, daisies</span><span class="r">36–40</span></a></li>
+      <li><a href="#page-9"><span class="n">Page 9</span><span class="t">Hermione Granger</span><span class="r">41–45</span></a></li>
+      <li><a href="#page-10"><span class="n">Page 10</span><span class="t">Gringotts and a rumour</span><span class="r">46–50</span></a></li>
+      <li><a href="#page-11"><span class="n">Page 11</span><span class="t">Duty face</span><span class="r">51–55</span></a></li>
+    </ol>
+    </details>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · The Slytherin compartment</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="Wide shot from the corridor door of a small compartment: two thickset boys in black robes side by side on the left bench with a picnic hamper between them, three girls on the right bench (a pale-haired girl in plain black robes at the window end, a girl with a short dark bob in the middle, a girl with long chestnut hair and a lilac bow at the door end), everyone settled and relaxed."></figure>
+  <figure><img src="img/02.jpg" alt="Medium shot of two thickset boys in black robes side by side on a bench, the boy on the right holding a picnic hamper open on his knees and offering a paper-wrapped pasty, the boy on the left reaching for it eagerly."></figure>
+  <figure><img src="img/03.jpg" alt="Close-up from above and in front of a girl&#x27;s two hands lifting a small slender white snake out from the front of her open black robe, the snake&#x27;s head rising towards her face, two girls leaning in on either side, a girl with a short dark bob delighted."></figure>
+  <figure><img src="img/04.jpg" alt="Medium close-up of a thickset boy with a mop of black hair looking worried, his eyes on something off to his right, his brows pulled together."></figure>
+  <figure><img src="img/05.jpg" alt="Medium close-up of a pale-haired girl in plain black robes with a small white snake draped over her shoulder, her chin lifted and one eyebrow raised, calm and dismissive, a girl&#x27;s blurred shoulder at the edge of the frame."></figure>
+  <p class="end">End of page 1</p>
+
+  <p class="page-label" id="page-2"><span>Page 2 · Are you really Harry Potter?</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/06.jpg" alt="Medium shot from inside a compartment of two identical red-haired boys in patched jumpers standing in the open sliding door, one leaning in with a grin, a gangling red-haired boy in a brown jacket sitting at the right of the frame looking up, a small boy with messy black hair and round glasses beside him."></figure>
+  <figure><img src="img/07.jpg" alt="Medium close-up of two identical red-haired boys in patched jumpers at the open sliding door, one pointing at a small boy with messy black hair and round glasses at the edge of the frame and the other waving, both grinning."></figure>
+  <figure><img src="img/08.jpg" alt="Medium shot of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper on the right bench leaning forward, blurting a question to a small boy with messy black hair and round glasses on the left bench who nods, the sliding door now closed."></figure>
+  <figure><img src="img/09.jpg" alt="Close-up of a small boy with messy black hair and round glasses sitting against a tall maroon backrest, pulling his fringe back from his forehead with one hand to show a thin lightning-bolt scar, a little embarrassed; he is alone in the frame."></figure>
+  <figure><img src="img/10.jpg" alt="Medium two-shot of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper staring wide-eyed and eager at a small boy with messy black hair and round glasses, who looks thoughtful, then Ron turning quickly to the window."></figure>
+  <p class="end">End of page 2</p>
+
+  <p class="page-label" id="page-3"><span>Page 3 · Brothers and a rat</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/11.jpg" alt="Medium two-shot in profile of a small boy with messy black hair and round glasses on the left bench and a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper on the right bench, Ron shrugging a little, both facing each other across the compartment."></figure>
+  <figure><img src="img/12.jpg" alt="Medium close-up of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper sitting against a tall maroon backrest, his head tilted, curious and a little wary, alone in the frame."></figure>
+  <figure><img src="img/13.jpg" alt="Close-up of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper looking gloomy, his eyes cast down and his ears going pink, a hand rubbing the back of his neck."></figure>
+  <figure><img src="img/14.jpg" alt="Medium close-up of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper pulling a fat grey rat out of the front of his jacket in one hand, the rat fast asleep and limp, looking away at the window."></figure>
+  <figure><img src="img/15.jpg" alt="Medium close-up of a small boy with messy black hair and round glasses in a grey-green sweatshirt sitting against a tall maroon backrest, talking earnestly with one hand lifted, alone in the frame."></figure>
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · A small flame</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/16.jpg" alt="Medium two-shot of a small boy with messy black hair and round glasses sitting forward with a worried frown and a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper on the right bench giving him an encouraging look."></figure>
+  <figure><img src="img/17.jpg" alt="Medium shot of two thickset boys in black robes sitting side by side on the full-width left bench in a bright compartment, the boy at the door end holding a small steady orange flame cupped in his open palm like a candle and gazing at it, the boy at the window end with the open picnic hamper on his knees and a golden pumpkin pasty in his other hand, taking a bite and watching the flame."></figure>
+  <figure><img src="img/18.jpg" alt="Medium close-up of two girls (a girl with a short dark bob and a girl with long chestnut hair and a lilac bow) leaning over a small stack of playing cards on the bench between them, the top card flaring up in a puff of orange flame and smoke, Daphne snatching her hand back, Pansy laughing."></figure>
+  <figure><img src="img/19.jpg" alt="Medium close-up of a girl with a short dark bob sitting against a tall maroon backrest, sitting forward with her chin lifted, smirking and pointing a finger across at someone off to the side of the picture; she is alone in the frame."></figure>
+  <figure><img src="img/20.jpg" alt="Close-up of a pale-haired girl in plain black robes with her hand on the pocket of her robe and her eyes lowered, hesitating, her mouth a thin line, a small white snake at her collar watching her."></figure>
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · The trolley witch</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/21.jpg" alt="Medium shot over the shoulder of a pale-haired girl in plain black robes in the right foreground, her slim wand raised and flicked, aimed across the compartment at a paper-wrapped pasty rising out of the open fingers of a thickset boy with short bristly hair on the opposite bench, his hand still held out, a second thickset boy with a mop of black hair beside him staring, a small white snake on her shoulder with its head turned towards the pasty."></figure>
+  <figure><img src="img/22.jpg" alt="Medium shot of a compartment in bright light, a paper-wrapped pasty hovering in the air between the two benches, a thickset boy with short bristly hair on the left bench gawping up at it with his mouth open and his hand still out, a thickset boy with a mop of black hair beside him staring, a girl with a short dark bob and a girl with long chestnut hair and a lilac bow on the right bench laughing, a pale-haired girl with a wand lowered at the window end, a small white snake on her shoulder following the pasty with its head."></figure>
+  <figure><img src="img/23.jpg" alt="Medium shot from the corridor of a smiling dimpled woman in a plain dark dress pushing a laden wooden sweets trolley, sliding a compartment door open with one hand, a bright corridor behind her, a small boy with messy black hair and round glasses and a gangling red-haired boy sitting on the benches at the edges of the frame."></figure>
+  <figure><img src="img/24.jpg" alt="Medium shot of a small boy with messy black hair and round glasses tipping an armful of sweets onto a bench seat, a heap of coloured packets, a gangling red-haired boy staring at the pile with his ears pink, a lumpy package of sandwiches on his knees."></figure>
+  <figure><img src="img/25.jpg" alt="Medium close-up of a small boy with messy black hair and round glasses holding out a pumpkin pasty across the compartment with a warm, hopeful smile, a gangling red-haired boy opposite holding half a dry sandwich and looking at the pasty, torn between pride and hunger."></figure>
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · Chocolate Frogs</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/26.jpg" alt="Close-up of a small boy with messy black hair and round glasses holding up a small flat chocolate-frog box in one hand and looking suspiciously at it, a freckled red-haired boy&#x27;s hand and shoulder at the edge of the frame."></figure>
+  <figure><img src="img/27.jpg" alt="Close-up of a boy&#x27;s hands holding a small rectangular wizard trading card showing a half-moon-spectacled old wizard with silver hair and a long crooked nose, a wrapped chocolate frog beside it."></figure>
+  <figure><img src="img/28.jpg" alt="Medium close-up of a small boy with messy black hair and round glasses staring in astonishment at an empty wizard card in his hand, a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper calm beside him, shrugging and munching a chocolate frog."></figure>
+  <figure><img src="img/29.jpg" alt="Medium close-up of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper holding up a small green jelly bean between finger and thumb and wincing as he nibbles a corner, a small boy with messy black hair and round glasses watching him with interest, a paper bag of coloured beans on the seat between them."></figure>
+  <figure><img src="img/30.jpg" alt="Medium shot from inside a compartment of a round-faced anxious boy with short brown hair in a grey coat standing in the open sliding door with his eyes red and wet, his hands clasped, looking miserable, two boys on the benches blurred and small in the near foreground."></figure>
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · Has anyone seen a toad?</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/31.jpg" alt="Medium shot from inside a compartment looking out through the open sliding door at a girl with very bushy brown hair and large front teeth in new black robes and a round-faced anxious boy with short brown hair in a grey coat in the doorway, the girl in front with her chin raised and her hands on her hips, the boy behind her with wet eyes, a bright corridor behind them."></figure>
+  <figure><img src="img/32.jpg" alt="Medium shot of two thickset boys in black robes on their feet in a compartment, standing shoulder to shoulder in front of the open sliding door with their arms folded and their faces blank, blocking it."></figure>
+  <figure><img src="img/33.jpg" alt="Medium close-up of a girl with very bushy brown hair and large front teeth in new black robes in the doorway looking over the boys&#x27; shoulders with narrowed eyes and one finger lifted, pointing in at a small white snake on a girl&#x27;s shoulder at the edge of the frame."></figure>
+  <figure><img src="img/34.jpg" alt="Close-up of a pale-haired girl in plain black robes with a small white snake on her shoulder, looking across the compartment, annoyed, with narrowed eyes, one lowered brow and a mocking smirk at one corner of her mouth."></figure>
+  <figure><img src="img/35.jpg" alt="Medium close-up of a girl with a short dark bob sitting back on the bench with a sly smirk and one eyebrow raised, a hand lifted airily, a small white snake at the edge of the frame lifting its head and blinking slowly."></figure>
+  <p class="end">End of page 7</p>
+
+  <p class="page-label" id="page-8"><span>Page 8 · Sunshine, daisies</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/36.jpg" alt="Medium two-shot of a girl with a short dark bob and a girl with long chestnut hair and a lilac bow sitting side by side on a bench looking scornfully towards the door with their noses lifted, the long-haired girl whispering behind her hand."></figure>
+  <figure><img src="img/37.jpg" alt="Medium shot from inside a compartment of a girl with very bushy brown hair and large front teeth in new black robes stiff in the doorway with her chin up and her cheeks pink, turning away, and a round-faced anxious boy with short brown hair in a grey coat behind her wiping his nose, the sliding door half closed."></figure>
+  <figure><img src="img/38.jpg" alt="Medium close-up of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper on the right bench with a fat grey rat asleep on his lap, rummaging in an open trunk and pulling out a very battered, chipped wand with something white glinting at its tip, his tongue between his teeth, a small boy with messy black hair and round glasses watching him from the left bench."></figure>
+  <figure><img src="img/39.jpg" alt="Medium shot from the window end of a compartment of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper on the right bench holding up a chipped, battered wand with a glint of white at its tip and a fat grey rat asleep on his lap, the sliding door opening behind him, a girl with very bushy brown hair and large front teeth in new black robes and a round-faced anxious boy with short brown hair in a grey coat stepping in."></figure>
+  <figure><img src="img/40.jpg" alt="Close-up of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper clearing his throat and pointing a battered wand at a limp grey rat asleep on his lap, mouth open mid-rhyme, and nothing happening, a bushy-haired girl&#x27;s face blurred at the edge of the frame watching sceptically."></figure>
+  <p class="end">End of page 8</p>
+
+  <p class="page-label" id="page-9"><span>Page 9 · Hermione Granger</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/41.jpg" alt="Medium shot of a girl with very bushy brown hair and large front teeth in new black robes sitting on the edge of a bench seat with her hands on her knees, talking very fast with her eyes wide, a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper stunned beside her, a small boy with messy black hair and round glasses at the left looking from one to the other."></figure>
+  <figure><img src="img/42.jpg" alt="Medium shot across the compartment, a small boy with messy black hair and round glasses on the bench at the right looking with a relieved, wry glance at a gangling red-haired boy who mutters with his eyes on his knees, sitting on the bench at the left, and beside him on the same bench a girl with very bushy brown hair in new black robes sitting with her hands on her knees, listening."></figure>
+  <figure><img src="img/43.jpg" alt="Medium shot of a girl with very bushy brown hair and large front teeth in new black robes leaning forward eagerly towards a small boy with messy black hair and round glasses, who looks dazed, her finger counting off a list of books."></figure>
+  <figure><img src="img/44.jpg" alt="Medium shot from inside a compartment of a girl with very bushy brown hair and large front teeth in new black robes in the open sliding door about to leave, one hand on the frame and a finger raised, a round-faced anxious boy with short brown hair in a grey coat already turning away in the corridor behind her."></figure>
+  <figure><img src="img/45.jpg" alt="Medium two-shot of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper scowling and throwing a battered wand into an open trunk while a small boy with messy black hair and round glasses sits across from him and asks a question."></figure>
+  <p class="end">End of page 9</p>
+
+  <p class="page-label" id="page-10"><span>Page 10 · Gringotts and a rumour</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/46.jpg" alt="Close-up of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper flopped back in his seat with his head against the window and a depressed, flat look, a small boy with messy black hair and round glasses leaning forward in the foreground edge with a nervous question."></figure>
+  <figure><img src="img/47.jpg" alt="Medium two-shot of a small boy with messy black hair and round glasses on the right bench leaning towards a gangling red-haired boy slumped on the left bench, with a kind, distracting smile, and exactly one very small grey rat, no longer than a fist, curled asleep on the bench cushion beside the red-haired boy on the side nearest the window, whiskers lit by window light."></figure>
+  <figure><img src="img/48.jpg" alt="Medium close-up of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper leaning forward with a conspiratorial look and one hand raised, a small boy with messy black hair and round glasses staring at him wide-eyed in the foreground edge."></figure>
+  <figure><img src="img/49.jpg" alt="Medium shot from inside a compartment, through the glass panel of the sliding door, of a blur of three figures racing down the corridor, two identical red-haired boys and a boy with long dreadlocks holding a small box above his head, a tiny leg poking out of the lid."></figure>
+  <figure><img src="img/50.jpg" alt="Medium shot of a girl with a short dark bob half out of a compartment door with one hand on the frame, looking back over her shoulder with wide, delighted eyes, her mouth open to share news."></figure>
+  <p class="end">End of page 10</p>
+
+  <p class="page-label" id="page-11"><span>Page 11 · Duty face</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/51.jpg" alt="Close-up from above of a small white snake&#x27;s tail slipping back into the front of a girl&#x27;s open black robe, a pale hand holding the edge of the robe open, white blouse collar visible."></figure>
+  <figure><img src="img/52.jpg" alt="Close-up of a pale-haired girl in plain black robes with her chin level and her eyes narrowed and steady, her face composed into a cool, closed duty face, the window light on her cheek."></figure>
+  <figure><img src="img/53.jpg" alt="Wide shot from the corridor door of a small compartment: a pale-haired girl in plain black robes standing up and smoothing her robe, two thickset boys in black robes behind her getting to their feet, two girls (a girl with a short dark bob and a girl with long chestnut hair and a lilac bow) already at the door waiting."></figure>
+  <figure><img src="img/54.jpg" alt="Medium shot from the window end of a compartment of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper sitting up with sparkling eyes and both hands gesturing in front of him as if holding a ball, a small boy with messy black hair and round glasses opposite looking blank."></figure>
+  <figure><img src="img/55.jpg" alt="Split panel, a straight vertical split with a thin gutter: left, a pale-haired girl in plain black robes walking in front along a bright railway corridor towards the viewer with her chin level and a cool, purposeful face, a girl with a short dark bob and a girl with long chestnut hair and a lilac bow close on either side of her and two thickset boys in black robes following behind; right, a small boy with messy black hair and round glasses and a gangling red-haired boy with freckles sitting opposite each other in a compartment, the red-haired boy talking eagerly with his hands, the sliding door closed behind them with an empty glass panel."></figure>
+  <p class="end">End of page 11</p>
+</main>
+
+<nav class="chapter-nav" aria-label="Chapter navigation" data-chapter="ch10">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<section id="comments" class="comments" data-chapter="ch10" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
+
+<footer class="site-footer">
+  <p><a class="chat" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener">💬 Chat with her in your browser ↗</a></p>
+  <p><a href="../../">Malfoid: The Girl who Yearned</a> · <a href="https://rhedak.github.io/malfoid-gallery/">Malfoid Gallery</a> · <a href="https://rhedak.github.io/rhedak-bio/">About the author</a> · <a href="https://github.com/rhedak/malfoid-the-girl-who-yearned">Source on GitHub</a></p>
+  <p>A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.</p>
+</footer>
+
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<script>
+// The contents list starts collapsed; "↑ Contents" (and a #contents link) opens it.
+(function () {
+  var d = document.querySelector('.toc details');
+  if (!d) return;
+  function open() { if (location.hash === '#contents') d.open = true; }
+  window.addEventListener('hashchange', open); open();
+  Array.prototype.forEach.call(document.querySelectorAll('a.top'), function (a) { a.addEventListener('click', function () { d.open = true; }); });
+})();
+</script>
+<script src="../../comments.js" defer></script>
+<script>
+// Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
+(function () {
+  var navs = document.querySelectorAll('.chapter-nav');
+  if (!navs.length || !window.fetch) return;
+  fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    Array.prototype.forEach.call(navs, function (nav) {
+      var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+      if (i < 0) return;
+      function link(cls, ch, text) {
+        var old = nav.querySelector('.' + cls);
+        if (!ch || !old) return;
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = '../' + encodeURIComponent(ch.id) + '/';
+        a.title = ch.title;
+        a.innerHTML = text;
+        nav.replaceChild(a, old);
+      }
+      link('prev', list[i - 1], '&lsaquo; Prev');
+      link('next', list[i + 1], 'Next &rsaquo;');
+    });
+  }).catch(function () {});
+})();
+</script>
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
