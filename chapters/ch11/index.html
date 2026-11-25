@@ -1,0 +1,401 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Malfoy and Potter · Malfoid</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../icon-192.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="description" content="Malfoy and Potter: Malfoid, a free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:title" content="Malfoy and Potter · Malfoid">
+<meta property="og:description" content="A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch11/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of Malfoid: The Girl who Yearned">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Malfoy and Potter · Malfoid">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<link rel="canonical" href="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch11/">
+
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "Show ▾"; color: var(--muted); }
+.toc details[open] summary::after { content: "Hide ▴"; }
+.toc details[open] summary { border-bottom: 0; }
+.toc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+  .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
+  .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
+  .chapter-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 720px; margin: 48px auto 0; padding: 14px 0 0; border-top: 1px solid var(--rule); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: 0.08em; }
+  .chapter-nav a, .chapter-nav .off { flex: 1 1 0; padding: 6px 4px; text-decoration: none; }
+  .chapter-nav a { color: var(--accent); }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chapter-nav .off { color: var(--muted); opacity: .5; }
+  .chapter-nav .prev { text-align: left; }
+  .chapter-nav .home { text-align: center; }
+  .chapter-nav.nav-top { margin: 0 auto; padding: 14px 0 0; border-top: 0; }
+  .chapter-nav .next { text-align: right; }
+  .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
+  .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .like { font: inherit; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .like[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+  .like:disabled { opacity: .6; cursor: wait; }
+  .like-count, .comment-meta, .comment-status, .comment-empty { color: var(--muted); font-size: .9rem; }
+  .comment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .comment-meta { margin: 0 0 4px; }
+  .comment-body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comments, .comments * { box-sizing: border-box; min-width: 0; }
+  .comment-form { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  .comment-form input, .comment-form textarea { max-width: 100%; }
+  .comment-form input, .comment-form textarea { font: inherit; width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+  .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
+  .comment-form button:disabled { opacity: .6; cursor: wait; }
+</style>
+
+<nav class="chapter-nav nav-top" aria-label="Chapter navigation" data-chapter="ch11">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 11</p>
+  <h1>Malfoy and Potter</h1>
+  <p class="meta">10 pages · 50 panels</p>
+  <p class="meta release">Version 1.0 · Published <time datetime="2026-11-25">25 November 2026</time> · Updated <time datetime="2026-11-25">25 November 2026</time></p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <details>
+    <summary>Contents</summary>
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">Quidditch and a sliding door</span><span class="r">01–05</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">Crabbe, Goyle and Malfoy</span><span class="r">06–10</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">The wrong sort</span><span class="r">11–15</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">Get out</span><span class="r">16–20</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">Scabbers bites</span><span class="r">21–25</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">Goyle comes first</span><span class="r">26–30</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">First aid</span><span class="r">31–35</span></a></li>
+      <li><a href="#page-8"><span class="n">Page 8</span><span class="t">Fighting, not us</span><span class="r">36–40</span></a></li>
+      <li><a href="#page-9"><span class="n">Page 9</span><span class="t">The dirt on his nose</span><span class="r">41–45</span></a></li>
+      <li><a href="#page-10"><span class="n">Page 10</span><span class="t">Robes on</span><span class="r">46–50</span></a></li>
+    </ol>
+    </details>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · Quidditch and a sliding door</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="medium shot from the window end of a compartment of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper on the right bench, sitting forward and talking eagerly with his hands apart as if explaining a game, a small boy with messy black hair and round glasses on the left bench listening, a heap of sweets and Chocolate Frog boxes on the seat beside the red-haired boy, and exactly one very small grey rat, no longer than a fist, curled asleep on the bench cushion beside the sweets, the sliding door closed behind them"></figure>
+  <figure><img src="img/02.jpg" alt="medium shot from inside a compartment, looking at the open sliding door filled with five figures, a girl with long pale hair in plain black robes standing in the middle of the doorway with her chin lifted, a thickset boy in black robes on either side of her like bodyguards, and behind them a girl with a short dark bob and a girl with long chestnut hair and a lilac bow, half hidden behind the boys&#x27; shoulders"></figure>
+  <figure><img src="img/03.jpg" alt="split panel, a straight vertical split with a thin gutter: left, a close-up of a pale-haired girl in plain black robes in a doorway, her eyes going wide for an instant at what she sees before her face is smoothed into a cool blank; right, a close-up of a small boy with messy black hair and round glasses, startled and frowning as if he has seen her before"></figure>
+  <figure><img src="img/04.jpg" alt="medium close-up of a pale-haired girl in plain black robes in a compartment doorway with a cool, interested, faintly superior look, a thickset boy in black robes cropped at each edge of the frame, speaking to someone in front of her"></figure>
+  <figure><img src="img/05.jpg" alt="medium shot from the window end of a small boy with messy black hair and round glasses sitting on the right bench with a heap of loose sweets beside him, looking away from the camera, at the open doorway on the left, with a wary, level, unsmiling look, his eyes fixed on the two thickset boys standing in it, the five Slytherins in the doorway all sharp and in focus (a thickset boy with bristly dark hair and a maroon collar, a girl with a short dark bob, a pale-haired girl with two thin braids in the middle, a girl with long chestnut hair and a lilac bow, a thickset boy with a bowl haircut and a dark blue collar)"></figure>
+  <p class="end">End of page 1</p>
+
+  <p class="page-label" id="page-2"><span>Page 2 · Crabbe, Goyle and Malfoy</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/06.jpg" alt="medium shot of a pale-haired girl in plain black robes in a doorway making a careless sideways gesture towards the two thickset boys in black robes beside her, who stand like statues, and the two girls behind them, as if introducing the furniture"></figure>
+  <figure><img src="img/07.jpg" alt="close-up of a pale-haired girl in plain black robes with her chin up and a small formal, faintly amused smile, introducing herself as if to a room"></figure>
+  <figure><img src="img/08.jpg" alt="medium shot of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper on the right bench with his hand over his mouth, giving a small cough that is really a stifled snigger, a small boy with messy black hair and round glasses cropped at the left edge"></figure>
+  <figure><img src="img/09.jpg" alt="medium close-up of a girl with a short dark bob and a fringe in black robes stepping up beside a pale-haired girl in a compartment doorway and snapping at someone off to the side with a sneer, the pale-haired girl stiff and cropped at the edge beside her, a thickset boy in black robes behind"></figure>
+  <figure><img src="img/10.jpg" alt="medium close-up of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper with his jaw set and his hands pressed flat on his knees, holding back a retort, a small boy with round glasses looking sideways at him"></figure>
+  <p class="end">End of page 2</p>
+
+  <p class="page-label" id="page-3"><span>Page 3 · The wrong sort</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/11.jpg" alt="medium shot over a small boy&#x27;s shoulder at a pale-haired girl in plain black robes in a doorway talking down to him with an air of generous condescension, the back of his messy black hair at the left edge"></figure>
+  <figure><img src="img/12.jpg" alt="close-up from a low angle of a girl&#x27;s slim hand held out palm sideways for a handshake, in the open doorway of a compartment, a small boy&#x27;s hands resting on his knees in the foreground"></figure>
+  <figure><img src="img/13.jpg" alt="close-up of a small boy with messy black hair and round glasses looking up at someone with a cool, steady look and his hands staying in his lap"></figure>
+  <figure><img src="img/14.jpg" alt="close-up of a pale-haired girl in plain black robes in a doorway whose outstretched hand is slowly lowering back to her side, her face stiff and tight, her eyes cast just aside, stung and trying not to show it"></figure>
+  <figure><img src="img/15.jpg" alt="medium close-up of a girl with a short dark bob in black robes stepping forward in a compartment doorway and speaking slowly with a cold smirk, the pale-haired girl beside her stiff and silent at the edge of the frame with her eyes lowered"></figure>
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · Get out</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/16.jpg" alt="close-up of a girl with a short dark bob in black robes with a thin cruel smile, speaking in a low, even, disdainful voice"></figure>
+  <figure><img src="img/17.jpg" alt="low-angle medium shot of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper standing up fast from the bench with his fists clenched at his sides, glaring ahead"></figure>
+  <figure><img src="img/18.jpg" alt="medium shot of a girl with long chestnut hair and a lilac bow in a compartment doorway giving a nervous, over-eager giggle while glancing sideways at the girl with the short dark bob beside her for approval, the pale-haired girl and the two thickset boys around them"></figure>
+  <figure><img src="img/19.jpg" alt="over-the-shoulder medium shot from behind a small boy with messy black hair who stands tense on the left with his chin up, facing two big thickset boys in black robes who loom large in the doorway ahead of him with a pale-haired girl between them"></figure>
+  <figure><img src="img/20.jpg" alt="medium close-up of a pale-haired girl in plain black robes in a doorway looking past the camera at a heap of sweets and Chocolate Frog boxes with a cool, appraising gaze, speaking over her shoulder to the thickset boys"></figure>
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · Scabbers bites</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/21.jpg" alt="high-angle close-up of a big thickset boy&#x27;s hand in a black sleeve reaching for a Chocolate Frog box on a maroon bench seat, a small grey rat no longer than a fist curled asleep on the cushion right beside the box, the hand a few centimetres from the rat"></figure>
+  <figure><img src="img/22.jpg" alt="close-up of a small grey rat hanging by its teeth from the thumb of a big boy&#x27;s hand over a maroon bench seat, the rat&#x27;s eyes now wide open and furious, the boy&#x27;s mouth opening in a yell at the edge of the frame; no blood spray, only a small mark where the teeth are"></figure>
+  <figure><img src="img/23.jpg" alt="medium shot of a thickset boy in black robes flinging his arm round and round in a wide arc with a small grey rat clamped to his hand, his mouth open in a howl, motion lines, a tall gangling red-haired boy leaping up at the left edge of the frame"></figure>
+  <figure><img src="img/24.jpg" alt="wide-ish medium shot of a small grey rat flying off a boy&#x27;s hand and hitting the glass of the large compartment window with a smack before dropping out of frame, a thickset boy clutching his hand at the edge, a tall red-haired boy diving after the rat"></figure>
+  <figure><img src="img/25.jpg" alt="dramatic medium shot of a small slender white snake about sixty centimetres long streaking out of the front of a pale-haired girl&#x27;s black robe, mouth open, straight at a small grey rat lying on the maroon bench, the girl at the left edge with one hand flying up"></figure>
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · Goyle comes first</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/26.jpg" alt="close-up of a pale-haired girl in plain black robes with one hand raised sharply, palm out, and her eyes locked on the white snake just in front of her that has stopped mid-strike with its head reared and mouth open, a small grey rat frozen below it"></figure>
+  <figure><img src="img/27.jpg" alt="medium shot from the doorway of a tall gangling red-haired boy with freckles and a long nose holding a limp small grey rat by its tail and a small boy with messy black hair and round glasses beside him, both staring wide-eyed past the camera at a white snake"></figure>
+  <figure><img src="img/28.jpg" alt="high-angle close-up of a girl&#x27;s slim hands in black sleeves taking hold of a big boy&#x27;s wrist and turning his hand over to look at his bitten thumb, a small bite mark welling a thin line of blood, her sleeve with a narrow silver braid at the cuff"></figure>
+  <figure><img src="img/29.jpg" alt="medium shot of a pale-haired girl in plain black robes turning to go, steering a thickset boy who cradles his injured hand towards the door, the other thickset boy and two girls already turning in the doorway behind them, her face set and worried under the cold mask"></figure>
+  <figure><img src="img/30.jpg" alt="medium shot from inside the compartment at the sliding door sliding shut on an empty doorway, the glass panel showing only the blur of a bright corridor, a small boy with messy black hair and round glasses and a tall red-haired boy at the edges of the frame watching the door"></figure>
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · First aid</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/31.jpg" alt="medium shot along a bright railway corridor of a pale-haired girl in plain black robes holding a big thickset boy&#x27;s bitten hand up above his heart in both of hers, a second thickset boy beside them looking worried, two girls close behind watching, the sliding compartment door closed behind them"></figure>
+  <figure><img src="img/32.jpg" alt="medium wide shot along a bright railway corridor from just behind a girl with very bushy brown hair in new black robes and a round-faced anxious boy with short brown hair, both cropped at the foreground edge, looking down the corridor at a group of five children standing close together a few metres away and blocking the corridor: a pale-haired girl holds a thickset boy&#x27;s bitten open hand up in both of hers, a second thickset boy and two girls crowded round them; the girl in the foreground gives the group a cool sideways look, the anxious boy glances at them once and then down"></figure>
+  <figure><img src="img/33.jpg" alt="medium close-up of a pale-haired girl in plain black robes with a short plain wand held over a thickset boy&#x27;s bitten thumb, her face fully focused, a thin pale thread of light winding from the wand tip round his hand, no flash and no sparks"></figure>
+  <figure><img src="img/34.jpg" alt="extreme close-up of a thickset boy&#x27;s thumb with a small clean bite wound, the bleeding stopped, a last faint pale thread of light fading from the skin around it"></figure>
+  <figure><img src="img/35.jpg" alt="medium two-shot of a pale-haired girl in plain black robes winding a plain white handkerchief round a big thickset boy&#x27;s hand and speaking firmly without looking up, the boy looking down at her, stoic and a little pale"></figure>
+  <p class="end">End of page 7</p>
+
+  <p class="page-label" id="page-8"><span>Page 8 · Fighting, not us</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/36.jpg" alt="medium shot from the window end of a compartment of a tall gangling red-haired boy with freckles and a long nose holding a limp small grey rat by its tail and peering at it, a small boy with messy black hair and round glasses watching, sweets and Chocolate Frog boxes scattered across the seat and the floor"></figure>
+  <figure><img src="img/37.jpg" alt="medium shot from the window end of a compartment of a girl with very bushy brown hair in new black robes stepping in through the sliding door and frowning at the sweets spread all over the floor, a tall red-haired boy holding a rat by the tail and a small boy with round glasses in the foreground"></figure>
+  <figure><img src="img/38.jpg" alt="medium close-up of a girl with very bushy brown hair in new black robes asking a question with a curious frown, a small boy with messy black hair and round glasses at the edge of the frame answering"></figure>
+  <figure><img src="img/39.jpg" alt="medium close-up of a tall gangling red-haired boy with freckles and a long nose in a brown jacket over a striped jumper speaking darkly, frowning at the floor"></figure>
+  <figure><img src="img/40.jpg" alt="medium shot of a girl with very bushy brown hair in new black robes in the doorway, brisk and bossy with a finger raised, a tall red-haired boy glaring back at her from the bench, a small boy with round glasses in the foreground"></figure>
+  <p class="end">End of page 8</p>
+
+  <p class="page-label" id="page-9"><span>Page 9 · The dirt on his nose</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/41.jpg" alt="close-up of a tall gangling red-haired boy with freckles and a long nose scowling up at someone out of frame, annoyed and sarcastic"></figure>
+  <figure><img src="img/42.jpg" alt="medium shot of a girl with very bushy brown hair in new black robes turning to leave through the sliding door with her nose in the air, speaking sniffily over her shoulder, the two boys cropped in the foreground"></figure>
+  <figure><img src="img/43.jpg" alt="medium shot from the window end of a tall gangling red-haired boy with freckles and a long nose glaring at the closed sliding door, one hand wiping his nose with the back of his wrist, a small boy with round glasses leaning to look out of the window at a darkening sky over mountains and forests"></figure>
+  <figure><img src="img/44.jpg" alt="wide-ish medium shot from the door end of a compartment of a pale-haired girl in plain black robes sitting at the window end of the right bench with her arms folded and a stiff look, a girl with a short dark bob and a girl with long chestnut hair beside her leaning in indignantly, two thickset boys on the left bench, one with a handkerchief bound round his hand"></figure>
+  <figure><img src="img/45.jpg" alt="medium two-shot from the door end of the right bench, a girl with a short dark bob and a fringe leaning back with a sneer of disgust and a toss of her head, speaking with relish, on the right of the middle, and beside her on the left, between her and the window, a pale-haired girl in plain black robes sitting stiffly with her arms folded and her face turned towards the window, and a girl in the foreground at the right edge of the frame"></figure>
+  <p class="end">End of page 9</p>
+
+  <p class="page-label" id="page-10"><span>Page 10 · Robes on</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/46.jpg" alt="close-up of a pale-haired girl in plain black robes at a compartment window looking at nothing, saying nothing, her face unreadable, her chin on her hand, the small white head of a snake sliding back into the front of her robe"></figure>
+  <figure><img src="img/47.jpg" alt="split panel, a straight vertical split with a thin gutter: left, a pale-haired girl in plain black robes at a compartment window brushing down the front of her robe with a hand, composed again; right, a tall gangling red-haired boy pulling a pair of long black robes over his jacket, the robes a little short so his trainers show underneath, a small boy with round glasses buttoning his robe beside him"></figure>
+  <figure><img src="img/48.jpg" alt="medium shot from inside a compartment of a small boy with messy black hair and round glasses at the window with his forehead near the glass, looking out at dark mountains and forests under a deep purple sky, a tall red-haired boy behind him looking up at the ceiling speaker"></figure>
+  <figure><img src="img/49.jpg" alt="medium two-shot of a small boy with messy black hair and round glasses with his hand pressed to his stomach, nervous, and a tall gangling red-haired boy with freckles and a long nose looking pale and uneasy beside him, both stuffing the last of the sweets into their robe pockets"></figure>
+  <figure><img src="img/50.jpg" alt="split panel, a straight vertical split with a thin gutter: left, a pale-haired girl in black robes standing at the head of her group among the crowd in a bright railway corridor with a dark window behind her, looking straight ahead with her chin level; right, a small boy with round glasses and a tall red-haired boy in black robes pressed into the same crowd in the corridor, the red-haired boy&#x27;s robes short at the ankle, both looking nervous"></figure>
+  <p class="end">End of page 10</p>
+</main>
+
+<nav class="chapter-nav" aria-label="Chapter navigation" data-chapter="ch11">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<section id="comments" class="comments" data-chapter="ch11" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
+
+<footer class="site-footer">
+  <p><a class="chat" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener">💬 Chat with her in your browser ↗</a></p>
+  <p><a href="../../">Malfoid: The Girl who Yearned</a> · <a href="https://rhedak.github.io/malfoid-gallery/">Malfoid Gallery</a> · <a href="https://rhedak.github.io/rhedak-bio/">About the author</a> · <a href="https://github.com/rhedak/malfoid-the-girl-who-yearned">Source on GitHub</a></p>
+  <p>A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.</p>
+</footer>
+
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<script>
+// The contents list starts collapsed; "↑ Contents" (and a #contents link) opens it.
+(function () {
+  var d = document.querySelector('.toc details');
+  if (!d) return;
+  function open() { if (location.hash === '#contents') d.open = true; }
+  window.addEventListener('hashchange', open); open();
+  Array.prototype.forEach.call(document.querySelectorAll('a.top'), function (a) { a.addEventListener('click', function () { d.open = true; }); });
+})();
+</script>
+<script src="../../comments.js" defer></script>
+<script>
+// Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
+(function () {
+  var navs = document.querySelectorAll('.chapter-nav');
+  if (!navs.length || !window.fetch) return;
+  fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    Array.prototype.forEach.call(navs, function (nav) {
+      var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+      if (i < 0) return;
+      function link(cls, ch, text) {
+        var old = nav.querySelector('.' + cls);
+        if (!ch || !old) return;
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = '../' + encodeURIComponent(ch.id) + '/';
+        a.title = ch.title;
+        a.innerHTML = text;
+        nav.replaceChild(a, old);
+      }
+      link('prev', list[i - 1], '&lsaquo; Prev');
+      link('next', list[i + 1], 'Next &rsaquo;');
+    });
+  }).catch(function () {});
+})();
+</script>
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
