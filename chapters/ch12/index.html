@@ -1,0 +1,402 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>The Lake and the Castle · Malfoid</title>
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../../favicon-32.png">
+<link rel="icon" type="image/png" sizes="192x192" href="../../icon-192.png">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="description" content="The Lake and the Castle: Malfoid, a free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:title" content="The Lake and the Castle · Malfoid">
+<meta property="og:description" content="A free fan webcomic retelling Philosopher's Stone with a split point of view between Harry and Draconia Malfoy.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch12/">
+<meta property="og:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cover of Malfoid: The Girl who Yearned">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Lake and the Castle · Malfoid">
+<meta name="twitter:image" content="https://rhedak.github.io/malfoid-the-girl-who-yearned/og-banner.jpg">
+<link rel="canonical" href="https://rhedak.github.io/malfoid-the-girl-who-yearned/chapters/ch12/">
+
+<style>
+/* Layout: one narrow column of full-width panels, read top to bottom like a webtoon, with a quiet header. */
+:root {
+  --bg: #f4f1ea;
+  --fg: #1c1a17;
+  --muted: #6e675d;
+  --rule: #d8d1c4;
+  --accent: #8a2c2c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101216;
+    --fg: #ece8df;
+    --muted: #9a958b;
+    --rule: #2a2d33;
+    --accent: #d07a6c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101216;
+  --fg: #ece8df;
+  --muted: #9a958b;
+  --rule: #2a2d33;
+  --accent: #d07a6c;
+  color-scheme: dark;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.5;
+  padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 48px;
+}
+header {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-block: 32px 24px;
+  border-bottom: 1px solid var(--rule);
+}
+.kicker {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 0 0 8px;
+}
+h1 {
+  font-size: 30px;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  text-wrap: balance;
+}
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 24px;
+}
+figure {
+  margin: 0 0 16px;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border-radius: 2px;
+}
+.page-label {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 40px 0 16px;
+}
+.end {
+  text-align: center;
+  color: var(--muted);
+  font-style: italic;
+  padding-block: 40px;
+  border-top: 1px solid var(--rule);
+  margin-top: 40px;
+}
+.toc {
+  margin-top: 20px;
+}
+.toc summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc summary::-webkit-details-marker { display: none; }
+.toc summary::after { content: "Show ▾"; color: var(--muted); }
+.toc details[open] summary::after { content: "Hide ▴"; }
+.toc details[open] summary { border-bottom: 0; }
+.toc summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.toc ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+.toc li {
+  border-bottom: 1px solid var(--rule);
+}
+.toc a {
+  display: grid;
+  grid-template-columns: 4.5rem minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: 12px;
+  padding: 14px 0;
+  color: var(--fg);
+  text-decoration: none;
+}
+.toc .n {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.toc .r {
+  font-size: 14px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.toc a:hover .t {
+  text-decoration: underline;
+}
+.toc a:focus-visible,
+.page-label .top:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.page-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  scroll-margin-top: 16px;
+}
+.page-label .top {
+  color: var(--muted);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  white-space: nowrap;
+}
+  .chat { display: inline-block; padding: 8px 14px; border: 1px solid var(--accent); border-radius: 999px; text-decoration: none; color: var(--accent); }
+  .chat:hover, .chat:focus-visible { background: var(--accent); color: var(--bg); }
+  .chapter-nav { display: flex; justify-content: space-between; align-items: center; gap: 12px; max-width: 720px; margin: 48px auto 0; padding: 14px 0 0; border-top: 1px solid var(--rule); font-family: "Helvetica Neue", Arial, sans-serif; font-size: 14px; letter-spacing: 0.08em; }
+  .chapter-nav a, .chapter-nav .off { flex: 1 1 0; padding: 6px 4px; text-decoration: none; }
+  .chapter-nav a { color: var(--accent); }
+  .chapter-nav a:hover { text-decoration: underline; }
+  .chapter-nav a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .chapter-nav .off { color: var(--muted); opacity: .5; }
+  .chapter-nav .prev { text-align: left; }
+  .chapter-nav .home { text-align: center; }
+  .chapter-nav.nav-top { margin: 0 auto; padding: 14px 0 0; border-top: 0; }
+  .chapter-nav .next { text-align: right; }
+  .comments { margin: 16px auto 0; max-width: 720px; border-top: 1px solid var(--rule); padding-top: 24px; }
+  .comments h2 { font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; margin: 0 0 12px; color: var(--accent); }
+  .comments h3 { font-size: 1rem; margin: 28px 0 8px; color: var(--muted); letter-spacing: .04em; text-transform: uppercase; }
+  .like-box { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 16px; }
+  .like { font: inherit; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--accent); background: transparent; color: var(--accent); cursor: pointer; }
+  .like[aria-pressed="true"] { background: var(--accent); color: var(--bg); }
+  .like:disabled { opacity: .6; cursor: wait; }
+  .like-count, .comment-meta, .comment-status, .comment-empty { color: var(--muted); font-size: .9rem; }
+  .comment-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+  .comment { border: 1px solid var(--rule); border-radius: 8px; padding: 12px 14px; }
+  .comment-meta { margin: 0 0 4px; }
+  .comment-body { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+  .comments, .comments * { box-sizing: border-box; min-width: 0; }
+  .comment-form { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  .comment-form input, .comment-form textarea { max-width: 100%; }
+  .comment-form input, .comment-form textarea { font: inherit; width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--rule); background: var(--bg); color: var(--fg); }
+  .comment-form button { justify-self: start; font: inherit; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--accent); color: var(--bg); cursor: pointer; }
+  .comment-form button:disabled { opacity: .6; cursor: wait; }
+</style>
+
+<nav class="chapter-nav nav-top" aria-label="Chapter navigation" data-chapter="ch12">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<header>
+  <p class="kicker">Malfoid · Chapter 12</p>
+  <h1>The Lake and the Castle</h1>
+  <p class="meta">10 pages · 51 panels</p>
+  <p class="meta release">Version 1.0 · Published <time datetime="2026-11-28">28 November 2026</time> · Updated <time datetime="2026-11-28">28 November 2026</time></p>
+  <nav class="toc" id="contents" aria-label="Contents">
+    <details>
+    <summary>Contents</summary>
+    <ol>
+      <li><a href="#page-1"><span class="n">Page 1</span><span class="t">Hogsmeade Station</span><span class="r">01–05</span></a></li>
+      <li><a href="#page-2"><span class="n">Page 2</span><span class="t">Firs&#x27; years</span><span class="r">06–10</span></a></li>
+      <li><a href="#page-3"><span class="n">Page 3</span><span class="t">The first sight of the castle</span><span class="r">11–15</span></a></li>
+      <li><a href="#page-4"><span class="n">Page 4</span><span class="t">Four to a boat</span><span class="r">16–20</span></a></li>
+      <li><a href="#page-5"><span class="n">Page 5</span><span class="t">Across the lake</span><span class="r">21–25</span></a></li>
+      <li><a href="#page-6"><span class="n">Page 6</span><span class="t">Under the ivy</span><span class="r">26–30</span></a></li>
+      <li><a href="#page-7"><span class="n">Page 7</span><span class="t">The steps</span><span class="r">31–35</span></a></li>
+      <li><a href="#page-8"><span class="n">Page 8</span><span class="t">Professor McGonagall</span><span class="r">36–40</span></a></li>
+      <li><a href="#page-9"><span class="n">Page 9</span><span class="t">A word about Goyle</span><span class="r">41–45</span></a></li>
+      <li><a href="#page-10"><span class="n">Page 10</span><span class="t">Whose side?</span><span class="r">46–51</span></a></li>
+    </ol>
+    </details>
+  </nav>
+</header>
+
+<main>
+  <p class="page-label" id="page-1"><span>Page 1 · Hogsmeade Station</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/01.jpg" alt="wide establishing shot of a tiny dark platform at night with a scarlet steam train standing alongside, steam drifting under yellow gas lamps, young students in black robes stepping down from the doors and bunching on the platform, a very tall bearded man with a lantern at the far end"></figure>
+  <figure><img src="img/02.jpg" alt="medium shot of four girls in black robes stepping down onto the platform beside the train, a pale-haired girl with two thin braids in front, a girl with a short dark bob, a girl with long chestnut hair and a lilac bow and a sturdy girl with heavy straight dark hair level at the chin, all looking ahead at something off to the right"></figure>
+  <figure><img src="img/03.jpg" alt="close-up of a thickset boy&#x27;s hand wrapped in a white bandage held gently against his chest by his friend&#x27;s big hand, a pale-haired girl with braids glancing down at it with a worried frown, black robes, the train out of focus behind"></figure>
+  <figure><img src="img/04.jpg" alt="view over the heads of a crowd of small students in black robes toward a swinging yellow lantern held high far down the platform, a huge shadowy figure beneath it"></figure>
+  <figure><img src="img/05.jpg" alt="medium shot of a huge bearded man twice the height of the children, with a big hairy face and a big grin, holding up a lantern and calling out, a small boy with messy black hair and round glasses in black robes in front of him looking up"></figure>
+  <p class="end">End of page 1</p>
+
+  <p class="page-label" id="page-2"><span>Page 2 · Firs&#x27; years</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/06.jpg" alt="medium two-shot of a short dark-bobbed girl in black robes with a wrinkled nose and a pale-haired girl with two thin braids beside her, both looking with distaste at something to their right, the pale-haired girl cool and unimpressed"></figure>
+  <figure><img src="img/07.jpg" alt="close-up of a short dark-bobbed girl in black robes pulling a disgusted face, her chin lifted, the dim platform lamps behind her"></figure>
+  <figure><img src="img/08.jpg" alt="close-up of a pale-haired girl with two thin braids and a cool, controlled expression, her lips pressed together, looking toward the lantern and then lowering her eyes, resigned and dutiful"></figure>
+  <figure><img src="img/09.jpg" alt="medium shot from behind of a line of first-year children in black robes walking along a dark platform toward a lantern, a pale-haired girl with braids at the front of her group, a short dark-bobbed girl just behind her looking sulky, two thickset boys behind them"></figure>
+  <figure><img src="img/10.jpg" alt="medium shot of a huge bearded man holding up a lantern and gesturing the way with his other hand toward a gap in a low fence, a line of children in black robes following him through the gap into the dark"></figure>
+  <p class="end">End of page 2</p>
+
+  <p class="page-label" id="page-3"><span>Page 3 · The first sight of the castle</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/11.jpg" alt="view from behind a line of small children in black robes following a swinging lantern down a steep narrow path between black trees, the lantern lighting the nearest trunks"></figure>
+  <figure><img src="img/12.jpg" alt="close-up of a pale-haired girl with two thin braids walking in the dark, her face lit from one side by a swinging lantern, quiet and watchful, black trees out of focus behind"></figure>
+  <figure><img src="img/13.jpg" alt="medium shot of a huge bearded man turning back toward the camera on a dark path, holding up a lantern, a plump round-faced boy in black robes sniffing nearby"></figure>
+  <figure><img src="img/14.jpg" alt="split panel, a straight vertical split with a thin gutter: left, a close-up of a small boy with messy black hair and round glasses, his mouth open in wonder, starlight in his eyes; right, a close-up of a pale-haired girl with two thin braids, her cool face for once undone, her eyes wide as she tries not to show it"></figure>
+  <figure><img src="img/15.jpg" alt="medium shot from behind of a group of small children in black robes standing at the dark edge of a great black lake, looking across it at the faint far-off shape of a vast castle with a thousand lit windows on a cliff, the lake wide and still"></figure>
+  <p class="end">End of page 3</p>
+
+  <p class="page-label" id="page-4"><span>Page 4 · Four to a boat</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/16.jpg" alt="medium shot of a huge bearded man standing on the shingle with a lantern, one arm pointing at a fleet of small wooden rowing boats sitting on the black water, calling out"></figure>
+  <figure><img src="img/17.jpg" alt="medium shot of four girls in black robes sitting in a small wooden rowing boat on black water, a pale-haired girl with two thin braids, a short dark-bobbed girl, a girl with long chestnut hair and a lilac bow and a sturdy girl with heavy dark hair level at the chin, sitting upright and holding their robes away from the damp"></figure>
+  <figure><img src="img/18.jpg" alt="medium shot of three boys in black robes in a small wooden rowing boat that sits low in the water, two thickset boys with one bandaged hand between them and a taller slim black-haired boy with a bored look beside them"></figure>
+  <figure><img src="img/19.jpg" alt="medium shot of a thin boy with untidy light-brown hair in black robes sitting alone in a small wooden rowing boat at the far end of the row, turned away from the others and looking out across the black water"></figure>
+  <figure><img src="img/20.jpg" alt="medium shot of four children in black robes sitting in a small wooden rowing boat on black water, a small boy with messy black hair and round glasses, a tall freckled red-haired boy, a plump round-faced boy and a girl with bushy brown hair"></figure>
+  <p class="end">End of page 4</p>
+
+  <p class="page-label" id="page-5"><span>Page 5 · Across the lake</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/21.jpg" alt="medium shot of a huge bearded man sitting alone in a small wooden boat with a lantern at its bow, looking back over his shoulder and shouting an order, the dark lake behind him"></figure>
+  <figure><img src="img/22.jpg" alt="medium shot of two small wooden boats gliding side by side over a perfectly smooth black lake at night, one with four girls in black robes, the other with four children, lanterns reflected in the water, a vast dark castle shape far ahead"></figure>
+  <figure><img src="img/23.jpg" alt="close-up of a pale-haired girl with two thin braids sitting in a boat at night, one hand pressing flat against the collar of her black robes where a small white snake&#x27;s head has just slipped out, her face composed, a short dark-bobbed girl beside her looking away at the castle"></figure>
+  <figure><img src="img/24.jpg" alt="large wide establishing shot from a small boat on the black lake at night looking across the water at a vast castle with many turrets, towers and hundreds of lit windows standing on a high cliff against a starry sky, the silhouettes of two girls in black robes in the foreground boat from behind, other little boats with lanterns scattered on the water"></figure>
+  <figure><img src="img/25.jpg" alt="medium shot of a huge bearded man in a boat facing back toward the camera with one hand cupped at his mouth, shouting, a high ivy-hung cliff just behind him"></figure>
+  <p class="end">End of page 5</p>
+
+  <p class="page-label" id="page-6"><span>Page 6 · Under the ivy</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/26.jpg" alt="view from behind the heads of two girls in a boat, one pale-haired with two thin braids, both bent low as a heavy curtain of ivy sweeps over them, lantern light on wet leaves"></figure>
+  <figure><img src="img/27.jpg" alt="medium shot of four children in a small boat gliding along a dark rock tunnel over black water, a lantern ahead lighting wet stone, their heads still low"></figure>
+  <figure><img src="img/28.jpg" alt="medium shot of children in black robes clambering out of small boats onto a rocky pebbled shelf in an underground harbour lit by lanterns, a pale-haired girl with braids stepping onto the rocks with a sturdy girl and two other girls behind her"></figure>
+  <figure><img src="img/29.jpg" alt="medium shot of a huge bearded man holding up a lantern and a small brown toad in his other hand, looking down at a crowd of children, checking the boats"></figure>
+  <figure><img src="img/30.jpg" alt="close-up of a plump round-faced boy in black robes with his hands held out and a blissful tearful smile, a small brown toad about to be placed in them"></figure>
+  <p class="end">End of page 6</p>
+
+  <p class="page-label" id="page-7"><span>Page 7 · The steps</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/31.jpg" alt="view from behind a line of children in black robes climbing a narrow passage cut into rock, following the swing of a lantern held by a huge man ahead, the nearest two thickset boys, one helping the other with his bandaged thumb, and a few steps ahead of them three girls (a pale-haired girl between a dark-bobbed girl and a girl with long wavy chestnut hair) walking side by side"></figure>
+  <figure><img src="img/32.jpg" alt="low-angle vertical shot from damp dark grass looking up at the enormous black wall of a castle rising into a starry sky, tiny lit windows high above, a handful of small children in black robes at the foot of the wall"></figure>
+  <figure><img src="img/33.jpg" alt="wide-ish shot of a crowd of small children in black robes at the bottom of a flight of worn stone steps leading up to a huge oak door studded with iron, torches either side, a very tall bearded man on the top step"></figure>
+  <figure><img src="img/34.jpg" alt="medium shot of a huge bearded man on a stone step turning to look down at a plump round-faced boy in black robes with a questioning frown, torchlight on both"></figure>
+  <figure><img src="img/35.jpg" alt="medium low-angle shot from behind the huge bearded man standing on the top step, his back to the camera and his right fist raised to knock on the great arched oak door, the door about twice his height, his face never seen"></figure>
+  <p class="end">End of page 7</p>
+
+  <p class="page-label" id="page-8"><span>Page 8 · Professor McGonagall</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/36.jpg" alt="medium shot of the great oak door swung open on a tall black-haired witch in emerald-green robes with a very stern face and a pointed hat, standing in the golden light of the hall, a huge bearded man at the side of the doorway with his lantern lowered"></figure>
+  <figure><img src="img/37.jpg" alt="wide-ish shot across a huge flagged stone entrance hall lit by flaming torches, seen from behind the group, a tall black-haired witch in emerald robes walking away from the camera far ahead at the head of a file of small children in black robes (four girls first with Crabbe and Goyle walking at their left, then four more children, nobody mixed), a marble staircase far ahead"></figure>
+  <figure><img src="img/38.jpg" alt="wide shot of a small stone chamber with seventeen nervous first years in black robes in three separate clusters: the future Slytherins on the left near the doorway (Draconia, Pansy, Daphne, Millicent in front, Crabbe, Goyle and Zabini behind, Nott a step apart with folded arms), the future Gryffindors on the right (Harry, Ron, Neville, Hermione) and five unnamed first years in the middle and back"></figure>
+  <figure><img src="img/39.jpg" alt="medium close-up of a tall black-haired witch in emerald-green robes and a pointed hat with a very stern face, speaking to the children in front of her, the stone doorway behind her"></figure>
+  <figure><img src="img/40.jpg" alt="medium shot of a tall black-haired witch in emerald robes at a stone doorway, half turned to leave, her hand on the doorframe, looking back past the back of a pale-haired girl&#x27;s head in the lower left foreground with a stern eye"></figure>
+  <p class="end">End of page 8</p>
+
+  <p class="page-label" id="page-9"><span>Page 9 · A word about Goyle</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/41.jpg" alt="medium shot of a pale-haired girl with two thin braids stepping forward out of a crowd of children in black robes and raising one hand, addressing a tall witch in emerald robes at a stone doorway who is just turning to leave"></figure>
+  <figure><img src="img/42.jpg" alt="close-up of a pale-haired girl with two thin braids speaking firmly and coolly, her chin up, with one eyebrow raised as if pointing out someone else&#x27;s fault"></figure>
+  <figure><img src="img/43.jpg" alt="medium shot with a thickset boy in black robes in the foreground, large and close to the camera, his arm stretched out towards the viewer with the palm open to show off his bandaged thumb, a second thickset boy standing behind him, smaller and further away"></figure>
+  <figure><img src="img/44.jpg" alt="close-up of a tall black-haired witch in emerald robes and a pointed hat, her eyebrows lifted and her thin mouth slightly open in genuine surprise, not used to being interrupted"></figure>
+  <figure><img src="img/45.jpg" alt="medium shot of a tall black-haired witch in emerald robes at a stone doorway holding a wand, a small folded paper aeroplane flying left towards the doorway and the golden hall, no children in the foreground"></figure>
+  <p class="end">End of page 9</p>
+
+  <p class="page-label" id="page-10"><span>Page 10 · Whose side?</span><a class="top" href="#contents">↑ Contents</a></p>
+  <figure><img src="img/46.jpg" alt="close-up two-shot of a tall freckled red-haired boy leaning toward a small boy with messy black hair and round glasses and whispering out of the side of his mouth with a defensive grumble, the black-haired boy looking uncomfortable"></figure>
+  <figure><img src="img/47.jpg" alt="medium shot of a brisk woman with greying brown hair pinned up under a small white cap, in a white apron over a plum-coloured dress, hurrying through the stone doorway and looking around the room for the injured child"></figure>
+  <figure><img src="img/48.jpg" alt="medium shot of a brisk woman in a white apron and small white cap bending toward a thickset boy and taking his bandaged hand in hers, a quick small glow of light at the tip of her wand over the bandage"></figure>
+  <figure><img src="img/49.jpg" alt="close-up of a short dark-bobbed girl in black robes with a puzzled, slightly wary expression, her nose wrinkled, watching someone walk out through the doorway"></figure>
+  <figure><img src="img/50.jpg" alt="medium shot of a girl with bushy brown hair whispering earnestly with a raised finger between two boys, a tall freckled red-haired boy glaring at her and a small boy with messy black hair and round glasses hesitating, caught between them"></figure>
+  <figure><img src="img/51.jpg" alt="split panel, a straight vertical split with a thin gutter: left, a close-up of a pale-haired girl with two thin braids in black robes, her chin lifted and her eyes narrowed in a cold level glare toward the right; right, a close-up of a small boy with messy black hair and round glasses in black robes, his jaw set and his green eyes hard, glaring back toward the left"></figure>
+  <p class="end">End of page 10</p>
+</main>
+
+<nav class="chapter-nav" aria-label="Chapter navigation" data-chapter="ch12">
+  <span class="prev off" aria-disabled="true">&lsaquo; Prev</span>
+  <a class="home" href="../../">Home</a>
+  <span class="next off" aria-disabled="true">Next &rsaquo;</span>
+</nav>
+
+<section id="comments" class="comments" data-chapter="ch12" data-api="https://malfoid-comments.rhedak.workers.dev"></section>
+
+<footer class="site-footer">
+  <p><a class="chat" href="https://rhedak.github.io/anime_ai_companion/demo/?pack=draconia-uniform" target="_blank" rel="noopener">💬 Chat with her in your browser ↗</a></p>
+  <p><a href="../../">Malfoid: The Girl who Yearned</a> · <a href="https://rhedak.github.io/malfoid-gallery/">Malfoid Gallery</a> · <a href="https://rhedak.github.io/rhedak-bio/">About the author</a> · <a href="https://github.com/rhedak/malfoid-the-girl-who-yearned">Source on GitHub</a></p>
+  <p>A free, non-commercial fan comic. Harry Potter and the names and settings from J. K. Rowling's books belong to their owners; this site is not affiliated with them. Images are made with AI tools and drawn panel by panel.</p>
+</footer>
+
+<script data-goatcounter="https://rhedak.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+
+<script>
+// The contents list starts collapsed; "↑ Contents" (and a #contents link) opens it.
+(function () {
+  var d = document.querySelector('.toc details');
+  if (!d) return;
+  function open() { if (location.hash === '#contents') d.open = true; }
+  window.addEventListener('hashchange', open); open();
+  Array.prototype.forEach.call(document.querySelectorAll('a.top'), function (a) { a.addEventListener('click', function () { d.open = true; }); });
+})();
+</script>
+<script src="../../comments.js" defer></script>
+<script>
+// Prev and Next come from chapters/index.json, so a chapter published later turns the Next link on without republishing this page.
+(function () {
+  var navs = document.querySelectorAll('.chapter-nav');
+  if (!navs.length || !window.fetch) return;
+  fetch('../index.json').then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    Array.prototype.forEach.call(navs, function (nav) {
+      var i = list.findIndex(function (c) { return c.id === nav.getAttribute('data-chapter'); });
+      if (i < 0) return;
+      function link(cls, ch, text) {
+        var old = nav.querySelector('.' + cls);
+        if (!ch || !old) return;
+        var a = document.createElement('a');
+        a.className = cls;
+        a.href = '../' + encodeURIComponent(ch.id) + '/';
+        a.title = ch.title;
+        a.innerHTML = text;
+        nav.replaceChild(a, old);
+      }
+      link('prev', list[i - 1], '&lsaquo; Prev');
+      link('next', list[i + 1], 'Next &rsaquo;');
+    });
+  }).catch(function () {});
+})();
+</script>
+<script>
+// Contents links scroll smoothly to the page labels; the plain #anchor still works if this does not run.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href^="#"]');
+  if (!a) return;
+  var el = document.getElementById(a.getAttribute('href').slice(1));
+  if (!el) return;
+  try {
+    var calm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    el.scrollIntoView({ behavior: calm ? 'auto' : 'smooth', block: 'start' });
+    e.preventDefault();
+  } catch (err) {}
+});
+</script>
